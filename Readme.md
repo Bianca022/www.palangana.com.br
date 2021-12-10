@@ -1,1 +1,1 @@
-Desenvolvimento do site Palangana
+Entrega do projeto prevista para dia 17/12/2021

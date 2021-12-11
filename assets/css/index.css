@@ -752,7 +752,7 @@ footer{
   height: 100%;
   background: linear-gradient(45deg, #023f25d3, #008d501e
   ) 0 0 / 1000% no-repeat,
-    url(../img/Foto\ Palangana2.jpg) 0 0 / cover no-repeat;
+    url(../img/Foto\footer.pbm) 0 0 / cover no-repeat;
 }
 .footer-0{
   display: flex;

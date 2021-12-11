@@ -1,0 +1,318 @@
+
+  *{
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    'nav nav nav'
+    'content conten content'
+    'content-rr content-rr content-rr'
+    'content-lr content-lr content-lr'
+    'conteiner-ambiental conteiner-ambiental conteiner-ambiental'
+    'footer footer footer'
+    ;
+  }
+  /**************************************/
+  nav{
+  grid-column:1/4;
+  height: 5vh;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 1;
+  }
+nav a{
+  color: #0f6641;
+  font-size: 16px;
+  text-decoration: none;
+}
+nav img{
+  margin-left: 40%;
+  width: 80%;
+}
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  color: #0f6641;
+  text-decoration: none;
+}
+#btn-mobile {
+  display: none;
+}
+.text-underlined{
+  position: relative;
+  overflow: hidden;
+  color: #00421e;
+  will-change: color;
+  transition: color .25s ease-out;  
+  display: flex;
+}
+.text-underlined::before, 
+.text-underlined::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--textUnderlinedLineColor, currentColor);
+  color: #0f6641;
+  will-change: width;
+  transition: width .1s ease-out;
+  position: absolute;
+  bottom: 0;
+}
+.text-underlined:hover::before, 
+.text-underlined:hover::after{
+  width: 100%;
+  transition-duration: .5s;
+}
+/******************************************/
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --secondary-color: #ffffff;
+    --contrast-color: #0f6641;
+  }
+ 
+  .content {
+    grid-area: content;
+    background: linear-gradient(45deg, #0f66409f, 
+    rgba(255, 255, 255, 0.37)) 0 0 / 1000% no-repeat,
+     url(../img/6.png) 0 0 / cover no-repeat;
+    height: 80vh;
+    justify-content: space-around;
+    color:  var(--secondary-color);
+    animation: expand .8s ease forwards;
+    transition: all .10s ease;
+    text-align: center;
+  }
+  .container_content {
+   width: 100%;
+   padding: 5%;
+  }
+  .content p{
+    line-height: 28px;
+    transform: translateY(300px);
+    animation: slideUp .8s ease-in-out forwards .8s;
+    font-size: 25px;
+    padding: 2% 5% 0% 5%;
+  }
+  .content h1{
+    overflow: hidden;
+    height: auto;
+    padding-top: 10%;
+    color: #ffffff;
+  }
+ 
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+/**********************************/
+.content-rr{
+  grid-area: content-rr;
+  text-align: center;
+  margin: 5%;
+}
+.content-rr h1{
+  color: #0f6641;
+}
+.content-lr{
+  grid-area: content-lr;
+  display: flex;
+  margin: 5%;
+  align-items: center;
+}
+.content-lr-x h2{
+  color: #ffffff;
+  text-align: center;
+  padding: 20%;
+}
+.content-lr-x{
+  background-image: url(../img/background-header.jpg);
+  height: 50%;
+  width: 50%;
+  margin: 10px;
+  border-radius: 20px;
+}
+.content-lr-y h2{
+  color: #ffffff;
+  text-align: center;
+  padding: 20%;
+}
+.content-lr-y{
+  background-image: url(../img/background-header.jpg);
+  height: 50%;
+  width: 50%;
+  margin: 10px;
+  border-radius: 20px;
+}
+/**********************************/
+.conteiner-ambiental{
+  grid-area: conteiner-ambiental;
+}
+.conteiner-ambiental-x{
+  background: url(../img/Palangana\ site.jpg) 0 0 / cover no-repeat;
+  width: 100%;
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.conteiner-ambiental h2{
+font-size: 30px;
+color: #fcfcfc;
+text-align: center;
+padding: 5% 0% 0% 0%;
+}
+.conteiner-ambiental p{
+font-size: 18px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #fcfcfc;
+text-align: center;
+}
+/**********************************/
+#part2 {
+  margin-top: 0%;
+  margin: 0%;
+  width: 100%;
+  height: 40px;
+  background-color: #0f6641;
+}
+#txt6 {
+  color: #fcfcfc;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height:30px;
+  font-size: 17px;
+  padding: 10px;
+}
+/*************************MEDIA***********************************/
+@media only screen and (max-width:600px){             
+footer{
+  flex-direction: column;
+  height: 90vh;
+}
+}
+@media only screen and (max-width:700px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'nav'
+    'content'
+    'content-rr'
+    'content-lr'
+    'conteiner-ambiental'
+    'footer'
+  }
+  #nav{
+    height: 100px;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #ffffffcc;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgb(22, 22, 22);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+    color: rgb(0, 90, 35);
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .content-lr{
+    flex-direction: column;
+  }
+  .content p{
+    font-size: 20px;
+  }
+  .content h1{
+    padding-top: 20%;
+  }
+}

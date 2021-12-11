@@ -1,0 +1,1052 @@
+
+  *{
+    box-sizing: border-box;
+    margin: 0%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    'nav nav nav'
+    'header header header'
+    'content-apresentacao content-apresentacao content-apresentacao '
+    'card-text card-text card-text'
+    'card-1 card-2 card-3'
+    'sobre sobre sobre'
+    'content-serviços content-serviços content-serviços'
+    'contato contato contato'
+    'carousel carousel carousel'
+    'content-apr content-apr content-apr'
+    'content-area content-area content-area'
+    'footer-x footer-x footer-x'
+    'footer-1 footer-1 footer-1'
+    ;
+  }
+  /**************************************/
+  nav{
+  grid-area: nav;
+  height: 5vh;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 1;
+  box-shadow: 5px 5px 30px 15px rgba(138, 228, 145, 0.048), 
+  -5px -5px 30px 15px rgba(109, 197, 109, 0.062);
+  }
+nav a{
+  color: #0f6641;
+  font-size: 16px;
+  text-decoration: none;
+}
+nav img{
+  margin-left: 80%;
+  width: 80%;
+}
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  margin-right: 10%;
+}
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  color: #0f6641;
+  text-decoration: none;
+}
+#btn-mobile {
+  display: none;
+}
+.text-underlined{
+  position: relative;
+  overflow: hidden;
+  color: #00421e;
+  will-change: color;
+  transition: color .25s ease-out;  
+  display: flex;
+}
+.text-underlined::before, 
+.text-underlined::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--textUnderlinedLineColor, currentColor);
+  color: #0f6641;
+  will-change: width;
+  transition: width .1s ease-out;
+  position: absolute;
+  bottom: 0;
+}
+.text-underlined:hover::before, 
+.text-underlined:hover::after{
+  width: 100%;
+  transition-duration: .5s;
+}
+
+/******************************************/
+header{
+  grid-area: header;
+  height: 100vh;
+  background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
+  url(../img/Foto\ Palangana6.jpeg) 0 0 / cover no-repeat;
+}
+#header-opacity{
+  height: 100vh;
+}
+.vertical-align {
+  display: table;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+}
+.vertical-align .vertical-align-1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+.vertical-align-1{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header h1 {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  margin-bottom: 15px;
+  margin-left: 2%;
+}
+header p {
+  padding: 0% 0% 0% 0% ;
+  font-size: 20px;
+  color: #fff;
+  margin-right:50%;
+  margin-left: 2%;
+}
+
+
+
+/*************************************/
+
+#content-apresentacao{
+  grid-area: content-apresentacao;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-areas:
+  'content-xl-1 content-xl-2 content-xl-3 content-xl-4';
+  text-align: center;
+ }
+ .content-xl-1{
+   grid-area: content-xl-1;
+   background: #00301b;
+   padding: 3%;
+   height: 30vh;
+ }
+ .content-xl-2{
+  grid-area: content-xl-2;
+  background: #004929;
+  padding: 3%;
+  height: 30vh;
+ }
+ .content-xl-3{
+  grid-area: content-xl-3;
+  background: #00301b;
+  padding: 3%;
+  height: 30vh;
+}
+ .content-xl-4{
+  grid-area: content-xl-4;
+  background: #004929;
+  padding: 3%;
+  height: 30vh;
+}
+ #content-apresentacao img{
+  width: 30%;
+}
+ .content-xl-1 h2{
+   color: #f3f3f3;
+   font-size: 25px;
+   font-weight: 500;
+   padding: 1%;
+}
+ .content-xl-2 h2{
+  color: #f3f3f3;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 1%;
+}
+ .content-xl-3 h2{
+  color: #f3f3f3;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 1%;
+}
+ .content-xl-4 h2{
+  color: #f3f3f3;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 1%;
+}
+ .content-xl-1 p{
+   font-size: 17px;
+   color: #fafafa;
+}
+ .content-xl-2 p{
+  font-size: 17px;
+  color: #fafafa;
+}
+ .content-xl-3 p{
+  font-size: 17px;
+  color: #fafafa;
+}
+ .content-xl-4 p{
+  font-size: 17px;
+  color: #fcfcfc;
+}
+
+
+/************************************/
+#card-text{
+  grid-area: card-text;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+}
+#card-text h1{
+ font-size: 45px;
+ color: #0f6641;
+}
+.text-color{
+  color: #757575;
+}
+#card-text h4{
+  margin: 1%;
+  font-size: 20px;
+  color: #757575;
+}
+#card-text p{
+  font-size: 17px;
+  padding: 0% 20% 0% 20%;
+}
+/************************************/
+.card-1 {
+  grid-area: card-1;
+  display: flex;
+  margin: 0% 0% 10% 5%;
+  justify-content: center;
+ }
+ .card-2 {
+  grid-area: card-2;
+  display: flex;
+  margin: 0% 0% 10% 0%;
+  justify-content: center;
+ }
+ .card-3{
+  grid-area: card-3;
+  display: flex;
+  margin: 0% 5% 10% 5%;
+  justify-content: center;
+ }
+ .card-a{
+   width: 70%;
+   background: url(../icon/Icone\ missão\ opacidade.png) ;
+   background-size: 50%;
+   background-repeat: no-repeat;
+ }
+ .card-b{
+   width: 70%;
+   background: url(../icon/Icone\ visão\ opacidade.png) ;
+   background-size: 50%;
+   background-repeat: no-repeat;
+ }
+ .card-c{
+   width: 70%;
+   background: url(../icon/icone\ valores\ opacidade.png) ;
+   background-size: 50%;
+   background-repeat: no-repeat;
+ }
+ .card-1 img{
+  margin: 3%;
+ }
+ .card-2 img{
+  margin: 3%;
+ }
+ .card-3 img{
+  margin: 3%;
+ }
+ .card-1 h2{
+  font-size: 30px;
+  color: #0f6641;
+ }
+ .card-2 h2{
+   font-size: 30px;
+   color: #0f6641
+  }
+ .card-3 h2{
+   font-size: 30px;
+   color: #0f6641
+  }
+ .card-1 p{
+  margin-top: 10px;
+  font-size: 19px;
+  color: #585858;
+ }
+ .card-2 p{
+  margin-top: 10px;
+  font-size: 19px;
+  color: #585858;
+ }
+ .card-3 p{
+  margin-top: 10px;
+  font-size: 19px;
+  color: #585858;
+ }
+/************************************/
+#sobre{
+  grid-area:sobre;
+}
+.content-sobre{
+  margin: 5%;
+}
+.content-sobre-x{
+  margin: 3%;
+}
+.content-sobre-x h1{
+  color: #0f6641;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.content-sobre-x h2{
+  color: #0f6641;
+  font-size: 35px;
+  font-weight: 500;
+  padding-right:50% ;
+}
+.content-sobre-x p{
+  color: #585858;
+}
+.content-d{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 200px;
+  background-color: #009C41;
+  margin-top: 13px;
+  margin-bottom: 18px;
+}
+.content-sobre2{
+  display: flex;
+}
+.content-sobre-y{
+  width: 50%;
+  margin: 1% 3% 1% 3%;
+}
+.content-sobre-y p{
+  font-size: 19px;
+  color: #585858;
+}
+.content-sobre-y img{
+  width: 100%;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+.content-sobre-z {
+  width: 50%;
+  margin: 1% 3% 1% 3%;
+ }
+ .content-sobre-z p{
+  font-size: 19px;
+  color: #585858;
+}
+.content-sobre-z img{
+  width: 100%;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+/************************************/
+#content-serviços{
+  grid-area: content-serviços;
+  width: 100%;
+  background: linear-gradient(45deg, #024226d8, #5eb9909f) 0 0 / 1000% no-repeat,
+      url(../img/Foto\ Palangana5.jpeg) 0 0 / cover no-repeat;
+}
+.content-x{
+  margin: 3%;
+}
+.content-serviços-x{
+  margin-bottom: 3%;
+  text-align: center;
+}
+.content-serviços-x h1{
+  color: #fcfcfc;
+  font-size: 40px;
+  font-weight: 500;
+}
+.content-a{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 150px;
+  background-color: #f8f8f8;
+  margin: 0 auto;
+  margin-top: 13px;
+  margin-bottom: 18px;
+}
+.content-serviços-x p{
+  color: #fcfcfc;
+  margin: 0% 15% 0% 15%;
+  font-size: 17px;
+}
+/**/
+.content-serviços-y{
+  display: flex;
+  text-align: center;
+  color: #0f6641;
+}
+.card-serviços-1{
+  margin: 3%;
+  width: 50%;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card-serviços-1:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(99, 99, 99, 0.25), 
+  -5px -5px 30px 15px rgba(138, 137, 137, 0.22);
+}
+.card-serviços-2{
+  margin: 3%;
+  width: 50%;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card-serviços-2:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(99, 99, 99, 0.25), 
+  -5px -5px 30px 15px rgba(138, 137, 137, 0.22);
+}
+.card-serviços-3{
+  margin: 3%;
+  width: 50%;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card-serviços-3:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(99, 99, 99, 0.25), 
+  -5px -5px 30px 15px rgba(138, 137, 137, 0.22);
+}
+.card-serviços-4{
+  margin: 2%;
+  width: 50%;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card-serviços-4:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(99, 99, 99, 0.25), 
+  -5px -5px 30px 15px rgba(138, 137, 137, 0.22);
+}
+/**/
+.content-serviços-z{
+  display: flex;
+  margin: 0% 10% 0% 10%;
+}
+.content-b{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: #fcfcfc;
+  margin-top: 13px;
+  margin-bottom: 18px;
+}
+.content-serviços-z1{
+  margin: 2%;
+  width: 50%;
+}
+.content-serviços-z1 p{
+  color: #fcfcfc;
+  font-size: 17px;
+}
+.content-serviços-z1 h2{
+  color: #fcfcfc;
+  font-weight: 500 ;
+}
+.content-serviços-z2{
+  display: flex;
+}
+.content-serviços-z2 img{
+  margin-right: 10px;
+}
+.content-serviços-z2{
+  margin: 2% 0% 0%  6%;
+}
+.content-serviços-z2 h3{
+  color: #fcfcfc;
+ font-size: 25px;
+ font-weight: 500;
+}
+.content-serviços-zc h1{
+  color: rgb(255, 255, 255);
+  font-weight: 500 ;
+}
+.content-serviços-zb h2{
+ color: #eee;
+ font-weight: 500 ;
+}
+.content-serviços-zb p{
+  color: #eee;
+  font-size: 15px;
+}
+.content-serviços-zb img{
+  margin: 10px;
+}
+.content-serviços-zc h2{
+  color: #eee;
+}
+.content-serviços-zc p{
+  color: #eee;
+}
+/*****************************************/
+#contato{
+ grid-area: contato;
+ margin-top: 5%;
+ margin-bottom: 5% ;
+}
+.content-contato{
+  margin: 3%;
+}
+.content-contato h1{
+  text-align: center;
+  color: #0f6641;
+  padding: 5px;
+  font-size: 35px;
+  font-weight: 500;
+}
+.content-contato h3{
+  color: #0f6641;
+  text-align: center;
+  margin: 10px;
+}
+.content-c{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 150px;
+  background-color: #0f6641;
+  margin: 0 auto;
+  margin-top: 13px;
+  margin-bottom: 18px;
+}
+.content-contato p{
+  text-align: center;
+  color: #585858;
+  padding: 0% 15% 0% 15%;
+  font-size: 20px;
+}
+.content-contato-1{
+  display: flex;
+  margin: 3%;
+}
+ form{
+   margin: 3%;
+ }
+.content-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.content-form input[type=text], input[type=number], input[type=email], select {
+  width: 100%;
+  padding: 9px 20px;
+  text-align: left;
+  border: solid 2px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #0f6641;
+  margin-top: 20px;
+}
+.content-form input[type=text], form textarea, form select, form{
+  border-radius: 5px ;
+  color: #0f6641;
+  padding: 9px 20px;
+  text-align: left;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.content-form input[type=submit]{
+  border: solid #0f6641 3px;
+  border-radius: 5px;
+  padding: 9px 20px;
+  background-color: #0f6641;
+  font-size: 15px;
+  color: #ffffff;
+  float: right;
+  width: 30%;
+  margin-top: 15px  ;
+}
+textarea#mensagem{
+  border: solid #0f6641 2px;
+  font-size: 15px;
+}
+/*****************************************/
+
+/*************************************/
+
+:root {
+  --carousel-width: 100%;
+  --carousel-height: 15vh;
+  --carousel-elements-displayed: 5;
+  --carousel-element-width: calc(var(--carousel-width) / var(--carousel-elements-displayed));
+  --carousel-animation-duration: calc(var(--carousel-elements) * 3s);
+}
+.carousel {
+  grid-area: carousel;
+  width: var(--carousel-width);
+  height: var(--carousel-height);
+  background-color: #004929;
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+.carousel:before, .carousel:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  content: "";
+  z-index: 1;
+}
+.carousel-content {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  animation: scrolling var(--carousel-animation-duration) linear infinite;
+}
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--carousel-element-width) * var(--carousel-elements))); }
+}
+.carousel-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: var(--carousel-element-width);
+  max-height: 100%;
+  font-size: calc(var(--carousel-height)*2/4); /* 5rem; */
+  white-space: nowrap;
+  margin-right: 15%;
+}
+.carousel-content li img {
+  width: 50%;
+  align-items: center;
+}
+/*************************************/
+.content-apr{
+ grid-area: content-apr;
+ background: linear-gradient(45deg, #023f25d3, #008d501e
+ ) 0 0 / 1000% no-repeat,
+   url(../img/Foto\ Palangana7.jpg) 0 0 / cover no-repeat;
+ width: 100%;
+}
+.content-apr-0{
+  display: flex;
+  align-items: center;
+}
+.content-apr-x{
+  width: 100%;
+  margin: 5%;
+  border-left: solid #f3f3f3 3px;
+}
+.content-apr-x h2{
+  font-size: 35px;
+  font-weight: 500;
+  color: #f5f5f5;
+  margin-left: 20px;
+}
+.content-apr-x p{
+  font-size: 20px;
+  color: #fcfcfc;
+  margin-left: 20px;
+}
+.content-apr-y {
+  width: 100%;
+  margin: 5%;
+  align-items:flex-end;
+}
+.content-apr-y img{
+  width: 100%;
+  border-radius: 10px;
+}
+/*************************************/
+.content-area{
+  grid-area: content-area;
+}
+.content-area-x{
+  display: flex;
+  text-align: center;
+  margin: 5%;
+}
+.content-area-x h1{
+  color: #fff;
+  font-weight: 500;
+}
+.content-area-x p{
+  color: #fff;
+}
+.content-area-x1 {
+  width: 50%;
+  height: 40vh;
+  margin: 20px;
+  padding: 5%;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #023f256e, #008d501e
+  ) 0 0 / 1000% no-repeat,
+   url(../img/Foto\ Palangana5.jpeg) 0 0 / cover no-repeat;
+   align-items: center;
+}
+.content-area-x2 {
+  width: 50%;
+  height: 40vh;
+  margin: 20px;
+  padding: 5%;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #023f2552, #008d501e
+  ) 0 0 / 1000% no-repeat,
+   url(../img/Foto\ Palangana5.jpeg) 0 0 / cover no-repeat;
+   align-items: center;
+}
+/*************************************/
+footer{
+  grid-area: footer-x;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #023f25d3, #008d501e
+  ) 0 0 / 1000% no-repeat,
+    url(../img/Foto\ Palangana2.jpg) 0 0 / cover no-repeat;
+}
+.footer-0{
+  display: flex;
+  justify-content: center;
+}
+.footer-x1{
+  width: 100%;
+  color: #fcfcfc;
+  margin: 1%;
+}
+.footer-x1 img{
+  width:70%;
+}
+.footer-x2{
+  width: 100%;
+  color: #fcfcfc;
+  margin: 1%;
+}
+.footer-x2 h1{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.footer-x2 p{
+  font-size: 17px;
+ }
+.footer-x2 img{
+  margin-right: 4px;
+ }
+.footer-x3{
+  width: 100%;
+  color: #fcfcfc;
+  margin: 1%;
+}
+.footer-x3 a{
+  margin: 10px;
+}
+.footer-x3 img{
+  width:20px ;
+  margin-top:20%;
+  margin-left: 10%;
+}
+.footer-x3 h1{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+ }
+.footer-x4{
+  width: 100%;
+  color: #fcfcfc;
+  margin: 1%;
+}
+.footer-x4 h1{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+ }
+.footer-x4 a{
+  text-decoration: none;
+  color: #fcfcfc;
+}
+/*************************************/
+.footer-1{
+  grid-area: footer-1;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  background-color: #0f6641;
+}
+.footer-1 p{
+  font-size: 15px;
+  color: #fcfcfc;
+  text-align: center;
+}
+.footer-1 a{
+  text-decoration: none;
+  color: #f5f5f5;
+}
+/*************************MEDIA***********************************/
+@media only screen and (max-width:400px){
+  .content-car{
+    height: 70vh;
+    align-items: center;
+  }
+  .content-car-x{
+    margin: 0%;
+  }
+  .content-car-x p{
+    margin:0%;
+    padding: 10px;
+  }
+  .content-car-y{
+    flex-direction: column;
+    margin: 0%;
+    align-items: center;
+  }
+  .content-car-y img{
+    margin-left: 0%;
+  }
+}
+@media only screen and (max-width:800px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'nav'
+    'header'
+    'content-apresentacao'
+    'card-text'
+    'card-1 '
+    'card-2'
+    'card-3'
+    'sobre'
+    'content-sobre2'
+    'content-serviços'
+    'contato'
+    'carousel'
+    'content-apr'
+    'content-area'
+    'footer-x'
+    'footer-1'
+  }
+  #nav{
+    height: 100px;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #ffffffcc;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgb(22, 22, 22);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+    color: rgb(0, 90, 35);
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  header h1{
+    padding: 20% 0% 1% 0%;
+    font-size: 30px;
+  }
+  header p {
+    padding: 1% 0% 2% 0% ;
+    font-size: 20px;
+  } 
+  .card-1 {
+    margin: 4%;
+  }
+  .card-2 {
+    margin: 4%;
+  }
+  .card-3 {
+    margin: 4%;
+  }
+  .content-sobre{
+    flex-direction: column;
+  }
+  .content-sobre2{
+    flex-direction: column;
+  }
+  .content-sobre-x h1{
+    font-size: 25px;
+   }
+   .content-sobre2-y h1{
+    font-size: 25px;
+   }
+  .content-d{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 300px;
+    background: linear-gradient(45deg, #0f6640,#009C41);
+    margin:30px;
+  }
+  #content-serviços{
+    flex-direction: column;
+  }
+  .content-serviços-z{
+    flex-direction: column;
+    width: 100%;
+  }
+  .content{
+    height: 140vh;
+  }
+  .content-1{
+   flex-direction: column;
+   align-items: center;
+  }
+  .content-2{
+  flex-direction: column;
+  align-items: center;
+  }
+  .content-serviços-y{
+    flex-direction: column;
+    align-items: center;
+  }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .carousel:before, .carousel:after { width: 5rem; }
+  .footer-x1{
+    margin: 2%;
+  }
+  .carousel-content li img {
+    width: 100%;
+    align-items: center;
+  }
+  .content-apr-0{
+    flex-direction: column;
+  }
+  .content-apr-0{
+    margin: 5%;
+  }
+  .footer-x1 img{
+    width: 50%;
+  }
+  .footer-x2{
+    margin: 2%;
+  }
+  .footer-x3{
+    margin: 2%;
+  }
+  .footer-x4{
+    margin: 2%;
+  }
+  .footer-0{
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+}
+}
+
+@media only screen and (max-width:900px){
+  #content-apresentacao{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'content-xl-1 '
+    'content-xl-2 '
+    'content-xl-3 '
+    'content-xl-4';  
+  } 
+  .content-contato-1{
+    flex-direction: column;
+    align-items: center;
+  }
+  form{
+    padding: 0%;
+    margin: 0%;
+
+  }
+}
+

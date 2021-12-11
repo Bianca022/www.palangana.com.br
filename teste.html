@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    'nav nav nav'
+    'header header header'
+    'content-apresentacao content-apresentacao content-apresentacao '
+    'card-text card-text card-text'
+    'card-1 card-2 card-3'
+    'content-serviços content-serviços content-serviços'
+    'contato contato contato'
+    'carousel carousel carousel'
+    'content-fixed content-fixed content-fixed'
+    'content-apr content-apr content-apr'
+    'footer-x footer-x footer-x'
+    'footer-1 footer-1 footer-1'
+    ;
+  }
+  /**************************************/
+  nav{
+  grid-area: nav;
+  height: 5vh;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 1;
+  }
+nav a{
+  color: #0f6641;
+  font-size: 16px;
+  text-decoration: none;
+}
+nav img{
+  margin-left: 80%;
+  width: 80%;
+}
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  margin-right: 10%;
+}
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  color: #0f6641;
+  text-decoration: none;
+}
+#btn-mobile {
+  display: none;
+}
+.text-underlined{
+  position: relative;
+  overflow: hidden;
+  color: #00421e;
+  will-change: color;
+  transition: color .25s ease-out;  
+  display: flex;
+}
+.text-underlined::before, 
+.text-underlined::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--textUnderlinedLineColor, currentColor);
+  color: #0f6641;
+  will-change: width;
+  transition: width .1s ease-out;
+  position: absolute;
+  bottom: 0;
+}
+.text-underlined:hover::before, 
+.text-underlined:hover::after{
+  width: 100%;
+  transition-duration: .5s;
+}
+
+/******************************************/
+header{
+  grid-area: header;
+  height: 100vh;
+  background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
+      url(../palangana/assets/img/Foto\ Palangana6.jpeg) 0 0 / cover no-repeat;
+}
+#header-opacity{
+  height: 100vh;
+}
+.vertical-align {
+  display: table;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+}
+.vertical-align .vertical-align-1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+.vertical-align-1{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-text{
+ 
+}
+header h1 {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+  margin-left: 2%;
+}
+header p {
+  padding: 0% 0% 0% 0% ;
+  font-size: 20px;
+  color: #fff;
+  margin-right:50%;
+  margin-left: 2%;
+}
+
+
+
+/*************************************/
+
+#content-apresentacao{
+
+  grid-area: content-apresentacao;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-areas:
+  'content-xl-1 content-xl-2 content-xl-3 content-xl-4';
+  text-align: center;
+ }
+ .content-xl-1{
+   grid-area: content-xl-1;
+   background: #00301b;
+   padding: 5%;
+   height: 40vh;
+ }
+ .content-xl-2{
+  grid-area: content-xl-2;
+  background: #004929;
+  padding: 5%;
+ }
+ .content-xl-3{
+  grid-area: content-xl-3;
+  background: #00301b;
+  padding: 5%;
+}
+ .content-xl-4{
+  grid-area: content-xl-4;
+  background: #004929;
+  padding: 5%;
+}
+.img-apresentaçao {
+  width: 30%;
+}
+ .content-xl-1 h2{
+   color: #f3f3f3;
+   font-size: 30px;
+   padding: 3%;
+}
+ .content-xl-2 h2{
+  color: #f3f3f3;
+  font-size: 30px;
+  padding: 3%;
+}
+ .content-xl-3 h2{
+  color: #f3f3f3;
+  font-size: 30px;
+  padding: 3%;
+}
+ .content-xl-4 h2{
+  color: #f3f3f3;
+  font-size: 30px;
+  padding: 3%;
+}
+ .content-xl-1 p{
+   font-size: 20px;
+   color: #fafafa;
+}
+ .content-xl-2 p{
+  font-size: 20px;
+  color: #fafafa;
+}
+ .content-xl-3 p{
+  font-size: 20px;
+  color: #fafafa;
+}
+ .content-xl-4 p{
+  font-size: 20px;
+  color: #fcfcfc;
+}
+
+
+/*************************MEDIA***********************************/
+@media only screen and (max-width:400px){
+  .content-car{
+    height: 70vh;
+    align-items: center;
+  }
+  .content-car-x{
+    margin: 0%;
+  }
+  .content-car-x p{
+    margin:0%;
+    padding: 10px;
+  }
+  .content-car-y{
+    flex-direction: column;
+    margin: 0%;
+    align-items: center;
+  }
+  .content-car-y img{
+    margin-left: 0%;
+  }
+}
+@media only screen and (max-width:800px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'nav'
+    'header'
+    'content-apresentacao'
+    'card-text'
+    'card-1 '
+    'card-2'
+    'card-3'
+    'content-serviços'
+    'contato'
+    'carousel'
+    'content-fixed'
+    'content-apr'
+    'footer-x'
+    'footer-1'
+  }
+  #nav{
+    height: 100px;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #ffffffcc;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgb(22, 22, 22);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+    color: rgb(0, 90, 35);
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  header h1{
+    padding: 20% 0% 1% 0%;
+    font-size: 30px;
+  }
+  header p {
+    padding: 1% 0% 2% 0% ;
+    font-size: 20px;
+  } 
+  .card-1 {
+    margin: 4%;
+  }
+  .card-2 {
+    margin: 4%;
+  }
+  .card-3 {
+    margin: 4%;
+  }
+  #content-serviços{
+    flex-direction: column;
+  }
+  .content-serviços-z{
+    flex-direction: column;
+    width: 100%;
+  }
+  .content{
+    height: 140vh;
+  }
+  .content-1{
+   flex-direction: column;
+   align-items: center;
+  }
+  .content-2{
+  flex-direction: column;
+  align-items: center;
+  }
+  .content-serviços-y{
+    flex-direction: column;
+    align-items: center;
+  }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .carousel:before, .carousel:after { width: 5rem; }
+  .footer-x1{
+    margin: 2%;
+  }
+  .carousel-content li img {
+    width: 100%;
+    align-items: center;
+  }
+  .content-apr-0{
+    flex-direction: column;
+  }
+  .content-apr-0{
+    margin: 5%;
+  }
+  .footer-x1 img{
+    width: 50%;
+  }
+  .footer-x2{
+    margin: 2%;
+  }
+  .footer-x3{
+    margin: 2%;
+  }
+  .footer-x4{
+    margin: 2%;
+  }
+  .footer-0{
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+}
+}
+
+@media only screen and (max-width:900px){
+  #content-apresentacao{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'content-xl-1 '
+    'content-xl-2 '
+    'content-xl-3 '
+    'content-xl-4';  
+  } 
+  .content-contato-1{
+    flex-direction: column;
+    align-items: center;
+  }
+  form{
+    padding: 0%;
+    margin: 0%;
+
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html"> <img src="assets/img/logo.png"> </a>
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <div class="text-underlined">
+          <li><a href="index.html">Home</a></li>
+          </div>
+          <div class="text-underlined">
+          <li><a href="#card-text">Sobre</a></li>
+          </div>
+          <div class="text-underlined">
+          <li><a href="#content-serviços">Serviços</a></li>
+          </div>
+          <div class="text-underlined">
+          <li><a href="#contato">Contato</a></li>
+          </div>
+        </ul>
+    </nav>
+     <!---->
+    <header>
+      <div  id="header-opacity">
+        <div class="vertical-align">
+          <div class="vertical-align-1">
+            <div class="header-text">
+             <h1>Transporte marítimo e apoio portuário </h1>
+             <p>Somos uma empresa com mais de 25 anos em excelência no transporte marítimo e apoio portuário, onde prestamos serviços de transporte marítimo de passageiros e cargas, 
+               amarração de navios, reboque marítimo, salvatagem e fornecimento de água potável, além de possuirmos um posto marítimo de combustível aberto ao público.
+             </p>
+            </div>
+           
+          </div>
+        </div>   
+      </div>  
+    </header>
+
+    <div id="content-apresentacao">
+      <div class="content-xl-1">
+        <img src="assets/icon/barco.gif" class="img-apresentaçao" >
+        <h2>Frota própria</h2>
+        <p>Operamos com uma frota própria de embarcações.</p>
+      </div>
+      <div class="content-xl-2">
+        <img src="assets/icon/seguro.gif"  class="img-apresentaçao">
+        <h2>Seguro náutico</h2>
+        <p>Todas as nossas embarcações e operações são asseguradas.</p>
+      </div>
+      <div class="content-xl-3">
+        <img src="assets/icon/certificado.gif"  class="img-apresentaçao">
+        <h2>Licenças</h2> 
+        <p>Possuimos todas as licenças e certificados para operação.</p>
+      </div>
+      <div class="content-xl-4">
+        <img src="assets/icon/suporte.gif"  class="img-apresentaçao">
+        <h2>Suporte 24 horas</h2>
+        <p>Nossa equipe opera 24 horas por dia, durante 7 dias na semana.</p>
+      </div>
+    </div>
+      
+
+</body>
+</html>

@@ -834,6 +834,9 @@ footer{
 }
 /*************************MEDIA***********************************/
 @media only screen and (max-width:400px){
+  .nav img{
+    margin: 0%;
+  }
   .content-xl-1{
     height: 35vh;
   }
@@ -859,6 +862,18 @@ footer{
   .content-contato p{
     font-size: 17px;
     padding: 0% 5% 0% 5%;
+  }
+  .content-serviços-z{
+    margin: 0%;
+  }
+  .content-serviços-z2 {
+    margin:0%;
+  }
+  .content-serviços-zc h1 {
+   font-size: 25px;
+  }
+  .content-serviços-zc h2{
+    font-size:20px;
   }
 }
 @media only screen and (max-width:800px){

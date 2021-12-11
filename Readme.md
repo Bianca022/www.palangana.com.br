@@ -1,1 +1,0 @@
-Entrega do projeto prevista para dia 17/12/2021

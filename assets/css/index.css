@@ -92,7 +92,7 @@ nav img{
 /******************************************/
 header{
   grid-area: header;
-  height: 100vh;
+  height: 90%;
   background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
   url(../img/header.jpeg) 0 0 / cover no-repeat;
 }
@@ -113,10 +113,10 @@ header{
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px
 }
 .header-text{
-  width: 100%;
+  width: 50%;
 }
 header h1 {
   font-size: 35px;
@@ -835,6 +835,9 @@ footer{
 }
 /*************************MEDIA***********************************/
 @media only screen and (max-width:400px){
+  .header-text{
+    width: 100%;
+  }
   .nav img{
     margin: 0%;
   }

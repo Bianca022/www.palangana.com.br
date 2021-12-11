@@ -1048,6 +1048,9 @@ footer{
   .content-apr-y img{
     padding:5%;
   }
+  .content-area-x{
+    flex-direction: column;
+  }
   .footer-x1 img{
     width: 50%;
   }

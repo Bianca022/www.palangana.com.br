@@ -994,12 +994,7 @@ footer{
     font-size: 25px;
   }
   .content-d{
-    content: "";
-    display: block;
-    height: 3px;
-    width: 300px;
-    background: linear-gradient(45deg, #0f6640,#009C41);
-    margin: 0% 1% 0% 1%;
+   height: 250;
   }
   #content-serviços{
     flex-direction: column;

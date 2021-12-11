@@ -757,6 +757,7 @@ footer{
 .footer-0{
   display: flex;
   justify-content: center;
+  margin: 3%;
 }
 .footer-x1{
   width: 100%;

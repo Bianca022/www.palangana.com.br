@@ -382,7 +382,7 @@ header p {
   margin: 3%;
 }
 .content-serviços-x{
-  margin-bottom: 3%;
+  margin: 3%;
   text-align: center;
 }
 .content-serviços-x h1{
@@ -413,7 +413,7 @@ header p {
 }
 .card-serviços-1{
   margin: 3%;
-  width: 50%;
+  width: 100%;
   background: #ffffff;
   padding: 15px;
   border-radius: 5px;
@@ -428,7 +428,7 @@ header p {
 }
 .card-serviços-2{
   margin: 3%;
-  width: 50%;
+  width: 100%;
   background: #ffffff;
   padding: 15px;
   border-radius: 5px;
@@ -443,7 +443,7 @@ header p {
 }
 .card-serviços-3{
   margin: 3%;
-  width: 50%;
+  width: 100%;
   background: #ffffff;
   padding: 15px;
   border-radius: 5px;
@@ -549,7 +549,7 @@ header p {
   font-weight: 500;
 }
 .content-contato h3{
-  color: #0f6641;
+  color: #009C41;
   text-align: center;
   margin: 10px;
 }
@@ -855,6 +855,10 @@ footer{
   .content-car-y img{
     margin-left: 0%;
   }
+  .content-contato p{
+    font-size: 17px;
+    padding: 0% 5% 0% 5%;
+  }
 }
 @media only screen and (max-width:800px){
   .container{
@@ -1004,6 +1008,9 @@ footer{
     flex-direction: column;
     width: 100%;
   }
+  .content-serviços-z2{
+    flex-direction: column;
+  }
   .content{
     height: 140vh;
   }
@@ -1036,7 +1043,10 @@ footer{
     flex-direction: column;
   }
   .content-apr-0{
-    margin: 5%;
+    padding: 5%;
+  }
+  .content-apr-y img{
+    padding:5%;
   }
   .footer-x1 img{
     width: 50%;

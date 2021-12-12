@@ -96,9 +96,6 @@ header{
   background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
   url(../img/header.jpeg) 0 0 / cover no-repeat;
 }
-#header-opacity{
-  height: 100vh;
-}
 .vertical-align {
   display: table;
   position: relative;

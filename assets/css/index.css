@@ -92,9 +92,12 @@ nav img{
 /******************************************/
 header{
   grid-area: header;
-  height: 90vh;
-  background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 100% no-repeat,
+  height: 90%;
+  background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
   url(../img/header.jpeg) 0 0 / cover no-repeat;
+}
+#header-opacity{
+  height: 100vh;
 }
 .vertical-align {
   display: table;
@@ -827,12 +830,12 @@ footer{
 }
 .footer-1 a{
   text-decoration: none;
-  color: #ffffff;
+  color: #fffff;
 }
 /*************************MEDIA***********************************/
 @media only screen and (max-width:400px){
   .header-text{
-    width: 0%;
+    width: 100%;
   }
   .nav img{
     margin: 0%;

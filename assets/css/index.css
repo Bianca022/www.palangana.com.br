@@ -251,19 +251,19 @@ header p {
  }
  .card-a{
    width: 70%;
-   background: url(../icon/Icone\ missão\ opacidade.png) ;
+   background: url(../icon/missao_opacidade.png) ;
    background-size: 50%;
    background-repeat: no-repeat;
  }
  .card-b{
    width: 70%;
-   background: url(../icon/Icone\ visão\ opacidade.png) ;
+   background: url(../icon/visao_opacidade.png) ;
    background-size: 50%;
    background-repeat: no-repeat;
  }
  .card-c{
    width: 70%;
-   background: url(../icon/icone\ valores\ opacidade.png) ;
+   background: url(../icon/valores_opacidade.png) ;
    background-size: 50%;
    background-repeat: no-repeat;
  }
@@ -751,7 +751,7 @@ footer{
   height: 100%;
   background: linear-gradient(45deg, #023f25d3, #008d501e
   ) 0 0 / 1000% no-repeat,
-    url(../img/footer.pbm) 0 0 / cover no-repeat;
+    url(../img/footer.jpg) 0 0 / cover no-repeat;
 }
 .footer-0{
   display: flex;
@@ -1097,7 +1097,5 @@ footer{
   form{
     padding: 0%;
     margin: 0%;
-
   }
 }
-

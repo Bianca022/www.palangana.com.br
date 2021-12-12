@@ -768,6 +768,8 @@ footer{
 }
 .footer-x1 img{
   width:70%;
+  margin-left: 20%;
+  margin-top: 10%;
 }
 .footer-x2{
   width: 100%;
@@ -828,6 +830,7 @@ footer{
   font-size: 13px;
   color: #ffffff;
   text-align: center;
+  padding: 5px;
 }
 .footer-1 a{
   text-decoration: none;

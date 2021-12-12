@@ -832,12 +832,9 @@ footer{
 }
 /*************************MEDIA***********************************/
 @media only screen and (max-width:400px){
-  .header-text{
-    width: 0%;
-  }
-  .nav img{
-    margin: 0%;
-  }
+  nav img {
+    margin-left: 5%;
+}
   .content-xl-1{
     height: 35vh;
   }
@@ -959,12 +956,30 @@ footer{
     transform: rotate(-135deg);
     top: -7px;
   }
+  .header-text{
+    width: 100%;
+  }
   header h1{
     font-size: 25px;
   }
   header p {
     font-size: 17px;
   } 
+  .content-xl-1{
+    height: 35vh;
+  }
+  .content-xl-2{
+    height: 35vh;
+  }
+  .content-xl-3{
+    height: 35vh;
+  }
+  .content-xl-4{
+    height: 35vh;
+  }
+  #content-apresentacao img {
+    width: 25%;
+}
   .card-1 {
     margin: 4%;
   }

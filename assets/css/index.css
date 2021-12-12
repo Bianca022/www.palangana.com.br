@@ -36,8 +36,8 @@
   background: rgb(255, 255, 255);
   position: fixed;
   z-index: 1;
-  box-shadow: 5px 5px 30px 15px rgba(138, 228, 145, 0.048), 
-  -5px -5px 30px 15px rgba(109, 197, 109, 0.062);
+  box-shadow: 5px 5px 30px 15px #009c4111, 
+  -5px -5px 30px 15px #0f66400a;
   }
 nav a{
   color: #0f6641;
@@ -510,10 +510,6 @@ header p {
  font-size: 25px;
  font-weight: 500;
 }
-.content-serviços-zc h1{
-  color: rgb(255, 255, 255);
-  font-weight: 500 ;
-}
 .content-serviços-zb h2{
  color: #eee;
  font-weight: 500 ;
@@ -526,7 +522,12 @@ header p {
   margin: 10px;
 }
 .content-serviços-zc h2{
+  color: rgb(255, 255, 255);
+  font-weight: 500 ;
+}
+.content-serviços-zc h2{
   color: #eee;
+  font-weight: 500;
 }
 .content-serviços-zc p{
   color: #eee;

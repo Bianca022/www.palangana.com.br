@@ -317,7 +317,7 @@ header p {
   margin: 3%;
 }
 .content-sobre-x h1{
-  color: #0f6641;
+  color: #757575;
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -377,7 +377,7 @@ header p {
       url(../img/div_services.jpeg) 0 0 / cover no-repeat;
 }
 .content-x{
-  margin: 3%;
+  padding: 3%;
 }
 .content-serviços-x{
   margin: 3%;
@@ -1015,14 +1015,20 @@ footer{
     flex-direction: column;
   }
   .content-sobre-x h1{
-    font-size: 25px;
+    font-size: 30px;
   }
   .content-sobre-x h2{
-    font-size: 30px;
+    font-size: 25px;
     padding-right:0%;
   }
    .content-sobre2-y h1{
     font-size: 25px;
+  }
+  .content-sobre-y {
+    width: 100%;
+  }
+  .content-sobre-z {
+    width: 100%;
   }
   .content-d{
    height: 250;

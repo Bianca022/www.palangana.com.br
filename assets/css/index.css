@@ -93,11 +93,7 @@ nav img{
 header{
   grid-area: header;
   height: 90vh;
-<<<<<<< HEAD
   background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 100% no-repeat,
-=======
-  background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
->>>>>>> 1522bd05fd476b953fbd72bd2b08e9eff2b9328a
   url(../img/header.jpeg) 0 0 / cover no-repeat;
 }
 .vertical-align {

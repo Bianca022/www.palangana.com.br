@@ -16,4 +16,4 @@ jobs:
         server: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASS }}
-        server-dir1: public_html/palangana/
+        server-dir1: public_html/palangana

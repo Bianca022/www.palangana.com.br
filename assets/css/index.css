@@ -101,17 +101,17 @@ header{
   background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
   url(../img/header.jpeg) 0 0 / cover no-repeat;
 }
-.vertical-align {
+#inicio {
   display: table;
   position: relative;
   height: 100%;
   margin: 0 auto;
 }
-.vertical-align .vertical-align-1 {
+#inicio .vertical-align{
   display: table-cell;
   vertical-align: middle;
 }
-.vertical-align-1{
+.vertical-align{
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -129,9 +129,6 @@ header p {
   font-size: 20px;
   color: #fff;
 }
-
-
-
 /*************************************/
 
 #content-apresentacao{
@@ -491,7 +488,7 @@ header p {
 }
 .content-serviços-z1{
   margin: 2%;
-  width: 50%;
+  width: 100%;
 }
 .content-serviços-z1 p{
   color: var(--cor-branco);
@@ -535,6 +532,7 @@ header p {
 }
 .content-serviços-zc p{
   color:var(--cor-branco);
+  font-size: 17px;
 }
 /*****************************************/
 #contato{
@@ -873,6 +871,21 @@ footer{
     margin:0%;
     padding: 10px;
   }
+  .content-serviços-z{
+    margin: 0%;
+  }
+  .content-serviços-z{
+    width: 100%;
+  }
+  .content-serviços-z2 {
+    margin:0%;
+  }
+  .content-serviços-zc h1 {
+   font-size: 25px;
+  }
+  .content-serviços-zc h2{
+    font-size:20px;
+  }
   .content-car-y{
     flex-direction: column;
     margin: 0%;
@@ -884,18 +897,6 @@ footer{
   .content-contato p{
     font-size: 17px;
     padding: 0% 5% 0% 5%;
-  }
-  .content-serviços-z{
-    margin: 0%;
-  }
-  .content-serviços-z2 {
-    margin:0%;
-  }
-  .content-serviços-zc h1 {
-   font-size: 25px;
-  }
-  .content-serviços-zc h2{
-    font-size:20px;
   }
 }
 @media only screen and (max-width:800px){
@@ -1062,10 +1063,10 @@ footer{
   }
   .content-serviços-z{
     flex-direction: column;
-    width: 100%;
   }
   .content-serviços-z2{
     flex-direction: column;
+    margin: 0%;
   }
   .content{
     height: 140vh;

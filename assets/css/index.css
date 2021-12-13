@@ -25,6 +25,7 @@
     'carousel carousel carousel'
     'content-apr content-apr content-apr'
     'content-area content-area content-area'
+    'redes redes redes'
     'footer-x footer-x footer-x'
     'footer-1 footer-1 footer-1'
     ;
@@ -742,7 +743,7 @@ textarea#mensagem{
   color: var(--cor-branco);
 }
 .content-area-x1 {
-  width: 50%;
+  width: 100%;
   height: 40vh;
   margin: 20px;
   padding: 5%;
@@ -753,7 +754,7 @@ textarea#mensagem{
    align-items: center;
 }
 .content-area-x2 {
-  width: 50%;
+  width: 100%;
   height: 40vh;
   margin: 20px;
   padding: 5%;
@@ -762,6 +763,17 @@ textarea#mensagem{
   ) 0 0 / 1000% no-repeat,
    url(../img/div_services.jpeg) 0 0 / cover no-repeat;
    align-items: center;
+}
+/*************************************/
+.redes{
+  grid-area: redes;
+}
+.content-redes{
+  background: #0f6641;
+  justify-content: center;
+}
+.content-redes img{
+  width: 25px;
 }
 /*************************************/
 footer{
@@ -917,6 +929,7 @@ footer{
     'carousel'
     'content-apr'
     'content-area'
+    'redes'
     'footer-x'
     'footer-1'
   }
@@ -1107,6 +1120,7 @@ footer{
   }
   .content-area-x{
     flex-direction: column;
+    align-items: center;
   }
   .footer-x1 img{
     width: 50%;

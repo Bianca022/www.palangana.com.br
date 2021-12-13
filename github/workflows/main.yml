@@ -16,4 +16,4 @@ jobs:
         server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_pass }}
-        server-dir1: public_html/palangana/
+        server-dir1: /home/u967918762/domains/singlec.com.br/public_html/palangana

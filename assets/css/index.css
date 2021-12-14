@@ -39,20 +39,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgb(255, 255, 255);
+  background:#0f664000;
   position: fixed;
   z-index: 1;
   box-shadow: 5px 5px 30px 15px #009c4111, 
   -5px -5px 30px 15px #0f66400a;
   }
 nav a{
-  color: var(--cor-verde-a);
+  color: var(--cor-branco);
   font-size: 16px;
   text-decoration: none;
 }
+nav i{
+  border-bottom:solid var(--cor-branco) 2px ;
+  font-style: normal;
+}
 nav img{
-  margin-left: 80%;
-  width: 80%;
+  margin-left: 60%;
+  width: 130px;
 }
 #menu {
   display: flex;
@@ -63,7 +67,7 @@ nav img{
 #menu a {
   display: block;
   padding: 0.5rem;
-  color: var(--cor-verde-a);
+  color: var(--cor-branco);
   text-decoration: none;
 }
 #btn-mobile {
@@ -72,7 +76,7 @@ nav img{
 .text-underlined{
   position: relative;
   overflow: hidden;
-  color: var(--cor-verde-a);
+  color: var(--cor-branco);
   will-change: color;
   transition: color .25s ease-out;  
   display: flex;
@@ -81,9 +85,9 @@ nav img{
 .text-underlined::after{
   content: "";
   width: 0;
-  height: 3px;
+  height: 2px;
   background-color: var(--textUnderlinedLineColor, currentColor);
-  color: var(--cor-verde-a);
+  color: var(--cor-branco);
   will-change: width;
   transition: width .1s ease-out;
   position: absolute;
@@ -212,7 +216,7 @@ header p {
 #card-text{
   grid-area: card-text;
   text-align: center;
-  margin: 5% 5% 5% 5%;
+  margin: 2% 5% 5% 5%;
 }
 #card-text h1{
  font-size: 45px;
@@ -771,7 +775,7 @@ footer{
 .footer-0{
   display: flex;
   justify-content: center;
-  padding: 3%;
+  padding: 1%;
 }
 .footer-x1{
   width: 100%;
@@ -835,7 +839,7 @@ footer{
 .footer-1{
   grid-area: footer-1;
   width: 100%;
-  height: 5vh;
+  height: 4vh;
   background-color: var(--cor-verde-a);
   display: table;
 }
@@ -858,7 +862,7 @@ footer{
 @media only screen and (max-width:400px){
   nav img {
     margin-left: 5%;
-}
+  }
   .content-xl-1{
     height: 35vh;
   }
@@ -900,6 +904,16 @@ footer{
     font-size: 17px;
     padding: 0% 5% 0% 5%;
   }
+}
+@media only screen and (max-width:600px){
+  #content-apresentacao{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'content-xl-1 '
+    'content-xl-2 '
+    'content-xl-3 '
+    'content-xl-4';  
+   } 
 }
 @media only screen and (max-width:800px){
   .container{
@@ -1132,14 +1146,7 @@ footer{
 }
 
 @media only screen and (max-width:900px){
-  #content-apresentacao{
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    'content-xl-1 '
-    'content-xl-2 '
-    'content-xl-3 '
-    'content-xl-4';  
-  } 
+ 
   .content-contato-1{
     flex-direction: column;
     align-items: center;

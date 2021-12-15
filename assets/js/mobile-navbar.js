@@ -15,3 +15,12 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+/*******/
+(function () {
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) nav.classList.add('nav');
+      else nav.classList.remove('nav');
+  });
+})();

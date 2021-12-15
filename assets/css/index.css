@@ -39,12 +39,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background:#0f664000;
   position: fixed;
   z-index: 1;
-  box-shadow: 5px 5px 30px 15px #009c4111, 
-  -5px -5px 30px 15px #0f66400a;
-  }
+  } 
+  
 nav a{
   color: var(--cor-branco);
   font-size: 16px;
@@ -55,7 +53,7 @@ nav i{
   font-style: normal;
 }
 nav img{
-  margin-left: 60%;
+  margin-left: 100%;
   width: 130px;
 }
 #menu {
@@ -499,41 +497,34 @@ header p {
   color: var(--cor-branco);
   font-weight: 500 ;
 }
-.content-serviços-z2{
-  display: flex;
-}
 .content-serviços-z2 img{
   margin-right: 10px;
 }
 .content-serviços-z2{
+  width: 100%;
   margin: 2% 0% 0% 6%;
 }
-.content-serviços-z2 h3{
+.content-serviços-z2 h2{
   color: var(--cor-branco);
- font-size: 25px;
- font-weight: 500;
 }
-.content-serviços-zb h2{
- color: var(--cor-branco);
- font-weight: 500 ;
+.content-serviços-zc{
+  display: flex;
 }
-.content-serviços-zb p{
-  color: var(--cor-branco);
-  font-size: 15px;
-}
-.content-serviços-zb img{
+.serviços-zc-1{
+  border: solid 2px var(--cor-branco);
+  border-radius: 10px;
+  padding: 3% 5% 3% 5%;
   margin: 10px;
 }
-.content-serviços-zc h2{
-  font-weight: 500 ;
-}
-.content-serviços-zc h2{
+.serviços-zc-1 h2{
   color: var(--cor-branco);
-  font-weight: 500;
 }
-.content-serviços-zc p{
-  color:var(--cor-branco);
-  font-size: 17px;
+.content-serviços-zc-2{
+  display: flex;
+}
+.serviços-zc-2 p{
+  font-size: 14px;
+  color: var(--cor-branco);
 }
 /*****************************************/
 #contato{

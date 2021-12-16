@@ -102,13 +102,13 @@
    background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
    url(../img/header.jpeg) 0 0 / cover no-repeat;
   }
-  #inicio {
+  #header-inicio {
    display: table;
    position: relative;
    height: 100%;
    margin: 0 auto;
   }
-  #inicio .vertical-align{
+  #header-inicio .vertical-align{
    display: table-cell;
    vertical-align: middle;
   }

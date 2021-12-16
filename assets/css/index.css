@@ -19,7 +19,6 @@
   'content-apresentacao content-apresentacao content-apresentacao '
   'card-text card-text card-text'
   'card-1 card-2 card-3'
-  'sobre sobre sobre'
   'content-serviços content-serviços content-serviços'
   'contato contato contato'
   'carousel carousel carousel'
@@ -79,7 +78,7 @@ nav img{
   will-change: color;
   transition: color .25s ease-out;  
   display: flex;
-  text-align: center;
+  justify-content: center;
 }
 .text-underlined::before, 
 .text-underlined::after{
@@ -480,6 +479,12 @@ header p {
   text-align: center;
   margin: 10px;
 }
+.redes{
+  text-align: center;
+}
+.redes img{
+  margin: 5px;
+}
 .content-c{
   content: "";
   display: block;
@@ -779,7 +784,7 @@ footer{
 }
 /*************************MEDIA***********************************/
 @media only screen and (max-width:400px){
-nav img {
+nav img{
   margin-left: 5%;
 }
 .content-xl-1{
@@ -852,8 +857,6 @@ font-size: 30px;
   'card-1 '
   'card-2'
   'card-3'
-  'sobre'
-  'content-sobre2'
   'content-serviços'
   'contato'
   'carousel'
@@ -875,6 +878,7 @@ font-size: 30px;
   visibility: hidden;
   overflow-y: hidden;
   margin: 0%;
+  padding: 0%;
 }
 #nav.active #menu {
   height: calc(40vh - 70px);
@@ -977,28 +981,6 @@ header p {
   font-size: 15px;
   padding: 0% 5% 0% 5%;
 }
-.content-sobre{
-  flex-direction: column;
-}
-.content-sobre2{
-  flex-direction: column;
-}
-.content-sobre-x h1{
-  font-size: 30px;
-}
-.content-sobre-x h2{
-  font-size: 25px;
-  padding-right:0%;
-}
-.content-sobre2-y h1{
-  font-size: 25px;
-}
-.content-sobre-y {
-  width: 100%;
-}
-.content-sobre-z {
-  width: 100%;
-}
 .content-d{
   height: 250;
 }
@@ -1017,7 +999,7 @@ header p {
 }
 .content-serviços-z2{
   flex-direction: column;
-  margin: 0%;
+  margin: 2%;
 }
 .serviços-zc-2 p {
   margin: 3%;

@@ -30,91 +30,89 @@
     'footer-1 footer-1 footer-1'
     ;
   }
-  /**************************************/
+  /******************nav********************/
   nav{
-  grid-area: nav;
-  height: 5vh;
-  width: 100%;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 1;
+   grid-area: nav;
+   height: 5vh;
+   width: 100%;
+   padding: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: fixed;
+   z-index: 1;
   } 
-  
-nav a{
-  color: var(--cor-branco);
-  font-size: 16px;
-  text-decoration: none;
-}
-nav i{
-  border-bottom:solid var(--cor-branco) 2px ;
-  font-style: normal;
-}
-nav img{
-  margin-left: 100%;
-  width: 130px;
-}
-#menu {
-  display: flex;
-  list-style: none;
-  gap: 0.5rem;
-  margin-right: 10%;
-}
-#menu a {
-  display: block;
-  padding: 0.5rem;
-  color: var(--cor-branco);
-  text-decoration: none;
-}
-#btn-mobile {
-  display: none;
-}
-.text-underlined{
-  position: relative;
-  overflow: hidden;
-  color: var(--cor-branco);
-  will-change: color;
-  transition: color .25s ease-out;  
-  display: flex;
-}
-.text-underlined::before, 
-.text-underlined::after{
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: var(--textUnderlinedLineColor, currentColor);
-  color: var(--cor-branco);
-  will-change: width;
-  transition: width .1s ease-out;
-  position: absolute;
-  bottom: 0;
-}
-.text-underlined:hover::before, 
-.text-underlined:hover::after{
-  width: 100%;
-  transition-duration: .5s;
-}
-
-/******************************************/
-header{
-  grid-area: header;
-  height: 90vh;
-  background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
-  url(../img/header.jpeg) 0 0 / cover no-repeat;
-}
-#inicio {
-  display: table;
-  position: relative;
-  height: 100%;
-  margin: 0 auto;
-}
-#inicio .vertical-align{
-  display: table-cell;
-  vertical-align: middle;
-}
-.vertical-align{
+  nav a{
+   color: var(--cor-branco);
+   font-size: 16px;
+   text-decoration: none;
+  }
+  nav i{
+   border-bottom:solid var(--cor-branco) 2px ;
+   font-style: normal;
+  }
+  nav img{
+   margin-left: 100%;
+   width: 130px;
+  }
+  #menu {
+   display: flex;
+   list-style: none;
+   gap: 0.5rem;
+   margin-right: 10%;
+  }
+  #menu a {
+   display: block;
+   padding: 0.5rem;
+   color: var(--cor-branco);
+   text-decoration: none;
+  }
+  #btn-mobile {
+   display: none;
+  }
+  .text-underlined{
+   position: relative;
+   overflow: hidden;
+   color: var(--cor-branco);
+   will-change: color;
+   transition: color .25s ease-out;  
+   display: flex;
+  }
+  .text-underlined::before, 
+  .text-underlined::after{
+   content: "";
+   width: 0;
+   height: 2px;
+   background-color: var(--textUnderlinedLineColor, currentColor);
+   color: var(--cor-branco);
+   will-change: width;
+   transition: width .1s ease-out;
+   position: absolute;
+   bottom: 0;
+  }
+  .text-underlined:hover::before, 
+  .text-underlined:hover::after{
+   width: 100%;
+   transition-duration: .5s;
+  }
+/********************header**********************/
+  header{
+   grid-area: header;
+   height: 90vh;
+   background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
+   url(../img/header.jpeg) 0 0 / cover no-repeat;
+  }
+  #inicio {
+   display: table;
+   position: relative;
+   height: 100%;
+   margin: 0 auto;
+  }
+  #inicio .vertical-align{
+   display: table-cell;
+   vertical-align: middle;
+  }
+ .vertical-align{
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -208,8 +206,6 @@ header p {
   font-size: 17px;
   color: var(--cor-branco);
 }
-
-
 /************************************/
 #card-text{
   grid-area: card-text;
@@ -233,6 +229,7 @@ header p {
 #card-text p{
   font-size: 17px;
   padding: 0% 20% 0% 20%;
+  color: var(--cor-cinza);
 }
 /************************************/
 .card-1 {
@@ -474,7 +471,7 @@ header p {
 /**/
 .content-serviços-z{
   display: flex;
-  margin: 0% 10% 0% 10%;
+  margin: 0% 10% 2% 10%;
 }
 .content-b{
   content: "";
@@ -509,6 +506,7 @@ header p {
 }
 .content-serviços-zc{
   display: flex;
+  width: 100%;
 }
 .serviços-zc-1{
   border: solid 2px var(--cor-branco);
@@ -519,12 +517,17 @@ header p {
 .serviços-zc-1 h2{
   color: var(--cor-branco);
 }
+.serviços-zc-1 p{
+  color: var(--cor-branco);
+  font-size: 12px;
+}
 .content-serviços-zc-2{
   display: flex;
 }
 .serviços-zc-2 p{
   font-size: 14px;
   color: var(--cor-branco);
+  padding: 2%;
 }
 /*****************************************/
 #contato{
@@ -687,7 +690,6 @@ textarea#mensagem{
 .content-apr-x p{
   font-size: 20px;
   color: var(--cor-branco);
-  margin-left: 20px;
 }
 .content-apr-y {
   width: 100%;
@@ -761,7 +763,8 @@ footer{
   height: 100%;
   background: linear-gradient(45deg, #023f25d3, #008d501e
   ) 0 0 / 1000% no-repeat,
-    url(../img/footer.jpg) 0 0 / cover no-repeat;
+    url(../img/footer2.jpg) 0 0 / cover no-repeat;
+   
 }
 .footer-0{
   display: flex;
@@ -785,7 +788,7 @@ footer{
 }
 .footer-x2 h1{
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 .footer-x2 p{
@@ -809,7 +812,7 @@ footer{
 }
 .footer-x3 h1{
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 10px;
  }
 .footer-x4{
@@ -819,7 +822,7 @@ footer{
 }
 .footer-x4 h1{
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 10px;
  }
 .footer-x4 a{
@@ -871,11 +874,18 @@ footer{
   .content-serviços-z{
     margin: 0%;
   }
+  .content-serviços-x h1 {
+  font-size: 30px;
+}
   .content-serviços-z{
     width: 100%;
   }
   .content-serviços-z2 {
     margin:0%;
+  }
+  .content-serviços-zc{
+    flex-direction: column;
+    width: 50%;
   }
   .content-serviços-zc h1 {
    font-size: 25px;
@@ -928,21 +938,19 @@ footer{
     'footer-x'
     'footer-1'
   }
-  #nav{
-    height: 100px;
-  }
   #menu {
     display: block;
     position: absolute;
     width: 100%;
-    top: 70px;
+    top: 64px;
     right: 0px;
-    background: #ffffffcc;
+    background: var(--cor-verde-a);
     transition: 0.6s;
     z-index: 1000;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
+    margin: 0%;
   }
   #nav.active #menu {
     height: calc(100vh - 70px);
@@ -952,7 +960,6 @@ footer{
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 2px solid rgb(22, 22, 22);
   }
   #btn-mobile {
     display: flex;
@@ -962,11 +969,12 @@ footer{
     background: none;
     cursor: pointer;
     gap: 0.5rem;
+    color: var(--cor-branco);
   }
   #hamburger {
     border-top: 2px solid;
     width: 20px;
-    color: rgb(0, 90, 35);
+    color: var(--cor-branco);
   }
   #hamburger::after,
   #hamburger::before {
@@ -1017,22 +1025,25 @@ footer{
     margin: 4%;
   }
   .card-1 p{
-    font-size: 17px;
+    font-size: 16px;
   }
   .card-2 {
     margin: 4%;
   }
   .card-2 p{
-    font-size: 17px;
+    font-size: 16px;
   }
   .card-3 {
     margin: 4%;
   }
   .card-3 p{
-    font-size: 17px;
+    font-size: 16 px;
+  }
+  #card-text{
+    margin: 5%;
   }
   #card-text h1{
-    font-size: 35px;
+    font-size: 30px;
   }
   #card-text h4{
     font-size: 17px;
@@ -1071,10 +1082,20 @@ footer{
   }
   .content-serviços-z{
     flex-direction: column;
+    margin: 3%;
+  }
+  .content-serviços-z1 {
+    width: 80%;
+}
+  .content-serviços-z1 p{
+    font-size: 15px;
   }
   .content-serviços-z2{
     flex-direction: column;
     margin: 0%;
+  }
+  .serviços-zc-2 p {
+    margin: 3%;
   }
   .content{
     height: 140vh;
@@ -1090,6 +1111,7 @@ footer{
   .content-serviços-y{
     flex-direction: column;
     align-items: center;
+    margin: 5%;
   }
   :root {
     --marquee-width: 100vw;
@@ -1121,18 +1143,18 @@ footer{
     width: 50%;
   }
   .footer-x2{
-    margin: 2%;
+    margin: 3%;
   }
   .footer-x3{
-    margin: 2%;
+    margin: 3%;
   }
   .footer-x4{
-    margin: 2%;
+    margin: 3%;
   }
   .footer-0{
-  flex-direction: column;
-  height: 90vh;
-  align-items: center;
+   flex-direction: column;
+   align-items: center;
+   padding: 5%;
 }
 }
 

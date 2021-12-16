@@ -513,6 +513,7 @@ header p {
   border-radius: 10px;
   padding: 3% 5% 3% 5%;
   margin: 10px;
+  text-align: center;
 }
 .serviços-zc-1 h2{
   color: var(--cor-branco);
@@ -523,11 +524,6 @@ header p {
 }
 .content-serviços-zc-2{
   display: flex;
-}
-.serviços-zc-2 p{
-  font-size: 14px;
-  color: var(--cor-branco);
-  padding: 2%;
 }
 /*****************************************/
 #contato{

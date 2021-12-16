@@ -30,91 +30,89 @@
     'footer-1 footer-1 footer-1'
     ;
   }
-  /**************************************/
+  /******************nav********************/
   nav{
-  grid-area: nav;
-  height: 5vh;
-  width: 100%;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 1;
+   grid-area: nav;
+   height: 5vh;
+   width: 100%;
+   padding: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: fixed;
+   z-index: 1;
   } 
-  
-nav a{
-  color: var(--cor-branco);
-  font-size: 16px;
-  text-decoration: none;
-}
-nav i{
-  border-bottom:solid var(--cor-branco) 2px ;
-  font-style: normal;
-}
-nav img{
-  margin-left: 100%;
-  width: 130px;
-}
-#menu {
-  display: flex;
-  list-style: none;
-  gap: 0.5rem;
-  margin-right: 10%;
-}
-#menu a {
-  display: block;
-  padding: 0.5rem;
-  color: var(--cor-branco);
-  text-decoration: none;
-}
-#btn-mobile {
-  display: none;
-}
-.text-underlined{
-  position: relative;
-  overflow: hidden;
-  color: var(--cor-branco);
-  will-change: color;
-  transition: color .25s ease-out;  
-  display: flex;
-}
-.text-underlined::before, 
-.text-underlined::after{
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: var(--textUnderlinedLineColor, currentColor);
-  color: var(--cor-branco);
-  will-change: width;
-  transition: width .1s ease-out;
-  position: absolute;
-  bottom: 0;
-}
-.text-underlined:hover::before, 
-.text-underlined:hover::after{
-  width: 100%;
-  transition-duration: .5s;
-}
-
-/******************************************/
-header{
-  grid-area: header;
-  height: 90vh;
-  background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
-  url(../img/header.jpeg) 0 0 / cover no-repeat;
-}
-#inicio {
-  display: table;
-  position: relative;
-  height: 100%;
-  margin: 0 auto;
-}
-#inicio .vertical-align{
-  display: table-cell;
-  vertical-align: middle;
-}
-.vertical-align{
+  nav a{
+   color: var(--cor-branco);
+   font-size: 16px;
+   text-decoration: none;
+  }
+  nav i{
+   border-bottom:solid var(--cor-branco) 2px ;
+   font-style: normal;
+  }
+  nav img{
+   margin-left: 100%;
+   width: 130px;
+  }
+  #menu {
+   display: flex;
+   list-style: none;
+   gap: 0.5rem;
+   margin-right: 10%;
+  }
+  #menu a {
+   display: block;
+   padding: 0.5rem;
+   color: var(--cor-branco);
+   text-decoration: none;
+  }
+  #btn-mobile {
+   display: none;
+  }
+  .text-underlined{
+   position: relative;
+   overflow: hidden;
+   color: var(--cor-branco);
+   will-change: color;
+   transition: color .25s ease-out;  
+   display: flex;
+  }
+  .text-underlined::before, 
+  .text-underlined::after{
+   content: "";
+   width: 0;
+   height: 2px;
+   background-color: var(--textUnderlinedLineColor, currentColor);
+   color: var(--cor-branco);
+   will-change: width;
+   transition: width .1s ease-out;
+   position: absolute;
+   bottom: 0;
+  }
+  .text-underlined:hover::before, 
+  .text-underlined:hover::after{
+   width: 100%;
+   transition-duration: .5s;
+  }
+/********************header**********************/
+  header{
+   grid-area: header;
+   height: 90vh;
+   background: linear-gradient(45deg, #0f664069, #0063380e) 0 0 / 1000% no-repeat,
+   url(../img/header.jpeg) 0 0 / cover no-repeat;
+  }
+  #inicio {
+   display: table;
+   position: relative;
+   height: 100%;
+   margin: 0 auto;
+  }
+  #inicio .vertical-align{
+   display: table-cell;
+   vertical-align: middle;
+  }
+ .vertical-align{
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -208,8 +206,6 @@ header p {
   font-size: 17px;
   color: var(--cor-branco);
 }
-
-
 /************************************/
 #card-text{
   grid-area: card-text;

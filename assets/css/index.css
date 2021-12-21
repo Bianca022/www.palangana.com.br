@@ -19,6 +19,7 @@
   'content-apresentacao content-apresentacao content-apresentacao '
   'card-text card-text card-text'
   'card-1 card-2 card-3'
+  'sobre sobre sobre'
   'content-serviços content-serviços content-serviços'
   'contato contato contato'
   'carousel carousel carousel'
@@ -309,6 +310,51 @@ header p {
   font-size: 19px;
   color: var(--cor-cinza);
 }
+/****************Sobre********************/
+#sobre{
+  grid-area: sobre;
+}
+.content-sobre{
+  display: flex;
+  align-items: center;
+  display: table;
+  margin-bottom: 3%;
+}
+.content-sobre-x{
+  width: 100%;
+  height: 70vh;
+  display: table-cell;
+  vertical-align: middle;
+  background: var(--cor-verde-a);
+  border-radius: 0px 40px 40px 0px;
+}
+.content-sobre-x1{
+  padding: 15%;
+}
+.content-sobre-x1 h1{
+  color: var(--cor-branco);
+  font-size: 40px;
+}
+.content-sobre-x1 h2{
+  color: var(--cor-branco);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.content-sobre-x1 p{
+  color: var(--cor-branco);
+}
+.content-sobre-y{
+  width: 100%;
+  position: relative;
+  top: 50px;
+  right: 80px;
+  bottom: 80px;
+}
+.content-sobre-y iframe{
+  border: solid 5px var(--cor-branco);
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
+}
 /****************Serviços********************/
 #content-serviços{
   grid-area: content-serviços;
@@ -397,7 +443,7 @@ header p {
   content: "";
   display: block;
   height: 2px;
-  width: 100px;
+  width: 120px;
   background-color: var(--cor-branco);
   margin-top: 13px;
   margin-bottom: 18px;
@@ -864,6 +910,7 @@ font-size: 30px;
   'card-1 '
   'card-2'
   'card-3'
+  'sobre'
   'content-serviços'
   'contato'
   'carousel'

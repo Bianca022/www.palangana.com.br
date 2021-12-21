@@ -1035,6 +1035,9 @@ header p {
   font-size: 15px;
   padding: 0% 5% 0% 5%;
 }
+.content-sobre{
+  flex-direction:column;
+}
 .content-d{
   height: 250;
 }

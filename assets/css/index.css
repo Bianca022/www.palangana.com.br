@@ -313,23 +313,24 @@ header p {
 /****************Sobre********************/
 #sobre{
   grid-area: sobre;
+  display: table;
 }
 .content-sobre{
   display: flex;
   align-items: center;
-  display: table;
-  margin-bottom: 3%;
+  margin-top: 3%;
+  margin-bottom: 5%;
 }
 .content-sobre-x{
   width: 100%;
-  height: 70vh;
-  display: table-cell;
-  vertical-align: middle;
-  background: var(--cor-verde-a);
+  background: #00B08A;
   border-radius: 0px 40px 40px 0px;
 }
 .content-sobre-x1{
   padding: 15%;
+  display: table-cell;
+  vertical-align: middle;
+  align-items: center;
 }
 .content-sobre-x1 h1{
   color: var(--cor-branco);
@@ -346,11 +347,12 @@ header p {
 .content-sobre-y{
   width: 100%;
   position: relative;
-  top: 50px;
+  top: 20px;
   right: 80px;
   bottom: 80px;
 }
 .content-sobre-y iframe{
+  width: 100%;
   border: solid 5px var(--cor-branco);
   border-radius: 20px;
   box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
@@ -842,6 +844,15 @@ nav img{
   margin:0%;
   padding: 10px;
 }
+.content-sobre-x1 h1{
+  font-size: 30px;
+}
+.content-sobre-x1 h2{
+  font-size:25px;
+}
+.content-sobre-x1 p{
+  font-size: 15px;
+}
 .content-serviços-z{
   margin: 0%;
 }
@@ -1035,8 +1046,11 @@ header p {
   font-size: 15px;
   padding: 0% 5% 0% 5%;
 }
-.content-sobre{
-  flex-direction:column;
+.content-sobre-y{
+  width: 80%;
+  top: -40px;
+  right:0px;
+  bottom:0px;
 }
 .content-d{
   height: 250;
@@ -1122,6 +1136,9 @@ header p {
 }
 }
 @media only screen and (max-width:900px){ 
+.content-sobre{
+  flex-direction: column;
+}
 .content-contato-1{
   flex-direction: column;
   align-items: center;

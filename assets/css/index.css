@@ -17,6 +17,7 @@
   'nav nav nav'
   'header header header'
   'content-apresentacao content-apresentacao content-apresentacao '
+  'carousel-ver carousel-ver carousel-ver'
   'card-text card-text card-text'
   'card-1 card-2 card-3'
   'sobre sobre sobre'
@@ -209,6 +210,63 @@ header p {
   font-size: 17px;
   color: var(--cor-branco);
 }
+/**************carousel**********************/
+#bntdiv {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 64px;
+  right: 0px;
+  background: var(--cor-verde-a);
+  transition: 0.6s;
+  z-index: 1000;
+  visibility: hidden;
+  overflow-y: hidden;
+  margin: 0%;
+  padding: 0%;
+}
+.content-xl-1.active #bntdiv {
+  height: calc(40vh - 70px);
+  visibility: visible;
+  overflow-y: auto;
+}
+#btndiv {
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 0.5rem;
+  color: var(--cor-branco);
+  align-items: center;
+}
+.bnt-div-ver{
+  border-top: 2px solid;
+  width: 20px;
+  color: var(--cor-branco);
+}
+.bnt-div-ver::after,
+.bnt-div-ver::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+.content-xl-1.active .bnt-div-ver {
+  border-top-color: transparent;
+}
+.content-xl-1.active .bnt-div-ver::before {
+  transform: rotate(135deg);
+}
+.content-xl-1.active .bnt-div-ver::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
 /**************Cultura**********************/
 #card-text{
   grid-area: card-text;
@@ -323,7 +381,7 @@ header p {
 }
 .content-sobre-x{
   width: 100%;
-  background: #00B08A;
+  background: #0f6640c2;
   border-radius: 0px 40px 40px 0px;
 }
 .content-sobre-x1{
@@ -361,7 +419,7 @@ header p {
 #content-serviços{
   grid-area: content-serviços;
   width: 100%;
-  background: linear-gradient(45deg, #024226d8, #5eb9909f) 0 0 / 1000% no-repeat,url(../img/posto.jpg) 0 0 / cover no-repeat;
+  background: linear-gradient(45deg, #024226e3, #5eb990dc) 0 0 / 1000% no-repeat,url(../img/posto.jpg) 0 0 / cover no-repeat;
 }
 .content-serviços-x{
   margin: 3%;
@@ -394,12 +452,19 @@ header p {
   align-items:center;
   color: var(--cor-verde-a);
 }
+.content-serviços-y p{
+  font-size: 17px;
+}
+.content-serviços-y h2{
+  font-size: 25px;
+  font-weight: 500;
+}
 .card-serviços-1{
   margin: 3%;
   width: 100%;
-  background: var(--cor-branco);
   padding: 3% 2% 3% 2%;
   border-radius: 15px;
+  background: linear-gradient(45deg, #ecfff7de, #d7e2dd9f) 0 0 / 1000% no-repeat,url(../img/lanchas.png) 0 0 / cover no-repeat;
   box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
   cursor: pointer;
   transition: 0.4s;
@@ -414,6 +479,7 @@ header p {
   background: var(--cor-branco);
   padding: 3% 2% 3% 2%;
   border-radius: 15px;
+  background: linear-gradient(45deg, #ecfff7de, #d7e2dd9f) 0 0 / 1000% no-repeat,url(../img/lanchas.png) 0 0 / cover no-repeat;
   box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
   cursor: pointer;
   transition: 0.4s;
@@ -428,6 +494,7 @@ header p {
   background: var(--cor-branco);
   padding: 3% 2% 3% 2%;
   border-radius: 15px;
+  background: linear-gradient(45deg, #ecfff7de, #d7e2dd9f) 0 0 / 1000% no-repeat,url(../img/lanchas.png) 0 0 / cover no-repeat;
   box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
   cursor: pointer;
   transition: 0.4s;
@@ -435,6 +502,36 @@ header p {
 .card-serviços-3:hover {
   transform: scale(0.9, 0.9);
   box-shadow: 5px 5px 30px 15px rgba(99, 99, 99, 0.25), -5px -5px 30px 15px rgba(138, 137, 137, 0.22);
+}
+.content-a1{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 150px;
+  background-color: var(--cor-verde-a);
+  margin: 0 auto;
+  margin-top: 13px;
+  margin-bottom: 18px;
+}
+.content-a2{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 200px;
+  background-color: var(--cor-verde-a);
+  margin: 0 auto;
+  margin-top: 13px;
+  margin-bottom: 18px;
+}
+.content-a3{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 200px;
+  background-color: var(--cor-verde-a);
+  margin: 0 auto;
+  margin-top: 13px;
+  margin-bottom: 18px;
 }
 /**/
 .content-serviços-z{
@@ -462,6 +559,7 @@ header p {
   color: var(--cor-branco);
   font-weight: 500 ;
 }
+/*
 .content-serviços-z2 img{
   margin-right: 10px;
 }
@@ -493,13 +591,14 @@ header p {
 .content-serviços-zc-2{
   display: flex;
 }
+*/
 /****************Contato*************************/
 #contato{
   grid-area: contato;
   margin-bottom: 5%;
 }
 .content-contato{
-  padding: 3%;
+  padding: 3% 3% 0% 3%;
 }
 .content-contato h1{
   text-align: center;
@@ -643,7 +742,7 @@ textarea#mensagem{
 }
 .content-apr-x{
   width: 100%;
-  margin: 5%;
+  margin: 5% 5% 5% 10%;
   border-left: solid var(--cor-branco) 3px;
 }
 .content-apr-x h2{
@@ -657,7 +756,6 @@ textarea#mensagem{
   color: var(--cor-branco);
 }
 .content-apr-y {
- width: 100%;
  margin: 5%;
  align-items:flex-end;
 }
@@ -917,6 +1015,7 @@ font-size: 30px;
   'nav'
   'header'
   'content-apresentacao'
+  'carousel-ver'
   'card-text'
   'card-1 '
   'card-2'

@@ -742,7 +742,7 @@ textarea#mensagem{
 }
 .content-apr-x{
   width: 50%;
-  margin: 5% 5% 5% 10%;
+  margin: 5% 5% 5% 5%;
   border-left: solid var(--cor-branco) 3px;
 }
 .content-apr-x h2{

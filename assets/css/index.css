@@ -462,9 +462,9 @@ header p {
 .card-serviços-1{
   margin: 3%;
   width: 100%;
+  background: var(--cor-branco);
   padding: 3% 2% 3% 2%;
   border-radius: 15px;
-  background: linear-gradient(45deg, #ecfff7de, #d7e2dd9f) 0 0 / 1000% no-repeat,url(../img/lanchas.png) 0 0 / cover no-repeat;
   box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
   cursor: pointer;
   transition: 0.4s;
@@ -479,7 +479,6 @@ header p {
   background: var(--cor-branco);
   padding: 3% 2% 3% 2%;
   border-radius: 15px;
-  background: linear-gradient(45deg, #ecfff7de, #d7e2dd9f) 0 0 / 1000% no-repeat,url(../img/lanchas.png) 0 0 / cover no-repeat;
   box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
   cursor: pointer;
   transition: 0.4s;
@@ -494,7 +493,6 @@ header p {
   background: var(--cor-branco);
   padding: 3% 2% 3% 2%;
   border-radius: 15px;
-  background: linear-gradient(45deg, #ecfff7de, #d7e2dd9f) 0 0 / 1000% no-repeat,url(../img/lanchas.png) 0 0 / cover no-repeat;
   box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
   cursor: pointer;
   transition: 0.4s;

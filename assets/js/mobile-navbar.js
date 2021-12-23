@@ -24,3 +24,6 @@ btnMobile.addEventListener('touchstart', toggleMenu);
       else nav.classList.remove('nav');
   });
 })();
+
+/******/
+window.location = "#wall-1";

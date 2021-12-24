@@ -19,8 +19,8 @@
   'content-apresentacao content-apresentacao content-apresentacao '
   'card-text card-text card-text'
   'card-1 card-2 card-3'
-  'slide slide slide'
   'sobre sobre sobre'
+  'frota frota frota'
   'content-serviços content-serviços content-serviços'
   'contato contato contato'
   'content-apr content-apr content-apr'
@@ -324,7 +324,7 @@ header p {
 .content-sobre-x{
   width: 100%;
   background: #0f6640c2;
-  border-radius: 0px 40px 40px 0px;
+  border-radius: 0px 50px 50px 0px;
 }
 .content-sobre-x1{
   padding: 15%;
@@ -335,6 +335,7 @@ header p {
 .content-sobre-x1 h1{
   color: var(--cor-branco);
   font-size: 40px;
+  font-weight: 500;
 }
 .content-sobre-x1 h2{
   color: var(--cor-branco);
@@ -356,28 +357,87 @@ header p {
   border: solid 5px var(--cor-branco);
   border-radius: 20px;
   box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
 }
+.content-sobre-y iframe:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(99, 99, 99, 0.25), -5px -5px 30px 15px rgba(138, 137, 137, 0.22);
+}
+/****************Frota********************/
+#frota{
+  grid-area: frota;
+}
+.content-frota{
+  display: flex;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.content-frota-x{
+  width: 100%;
+  background: #0f6640c2;
+  border-radius: 50px 0px 0px 50px;
+}
+.content-frota-x1{
+  padding: 15%;
+}
+.content-frota-x1 h1{
+  color: var(--cor-branco);
+  font-size: 40px;
+  font-weight: 500;
+}
+.content-frota-x1 h2{
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--cor-branco)
+}
+.content-frota-x2{
+  display: flex;
+}
+.content-frota-x2 img{
+  width: 50%;
+  padding: 2%;
+  border-radius: 20px;
+}
+.content-frota-x1 p{
+  color: var(--cor-branco);
+}
+.content-frota-y{
+  width: 100%;
+  position: relative;
+  align-items: center;
+  top: 100px;
+  left: 60px;
+  bottom: 80px;
+}
+
 /****************carousel********************/  
+
 #slide{
   grid-area: slide;
   width: 100%;
   align-items: center;
-  animation-duration:15s ;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#slide:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(99, 99, 99, 0.25), -5px -5px 30px 15px rgba(138, 137, 137, 0.22);
 }
 .wall{
   display: none;
   width: 100%;
-  height: 90vh;
-  transition: 2s;
+  height: 50vh;
+  border-radius: 20px;
 }
 .wall h1{
-    color: var(--cor-branco);
-    font-weight: 500;
-    text-align: center;
-    padding: 5%;
-    margin: 0%;
+  color: var(--cor-branco) ;
+  font-weight: 400;
+  text-align: center;
+  padding: 3% ;
+  margin: 0%;
 }
 .icon-flexa1{
   float: left;
@@ -390,24 +450,28 @@ header p {
   margin-top: 20%;
 }
 .wall-1{
-    background: url(../img/lanchas.png) 0 0 / cover no-repeat;
-    background-size:100% ;
+  background: url(../img/lanchas.png) 0 0 / cover no-repeat;
+  background-size:100% ;
 }
 .wall-2{
-    background: linear-gradient(45deg, #0242269c, #5eb9908e) 0 0 / 1000% no-repeat,url(../img/lanchas.png) 0 0 / cover no-repeat;
+    background: url(../img/Foto\ carousel2.png) 0 0 / cover no-repeat;
     background-size:100% ;
 }
 .wall-3{
-    background: linear-gradient(45deg, #0242269c, #5eb9908e) 0 0 / 1000% no-repeat,url(../img/lanchas.png) 0 0 / cover no-repeat;
+    background: url(../img/Foto\ carousel3.png) 0 0 / cover no-repeat;
     background-size:100% ;
 }
 .wall-4{
-    background: linear-gradient(45deg, #0242269c, #5eb9908e) 0 0 / 1000% no-repeat,url(../img/lanchas.png) 0 0 / cover no-repeat;
+    background: url(../img/Foto\ carousel4.png) 0 0 / cover no-repeat;
     background-size:100% ;
 }
 .wall-5{
-    background: linear-gradient(45deg, #0242269c, #5eb9908e) 0 0 / 1000% no-repeat,url(../img/lanchas.png) 0 0 / cover no-repeat;
+    background: url(../img/Foto\ carousel1.png) 0 0 / cover no-repeat;
     background-size:100% ;
+}
+.wall-6{
+  background: url(../img/Palangana\ X.png) 0 0 / cover no-repeat;
+  background-size:100% ;
 }
 .wall:target{
   display: block;
@@ -1002,6 +1066,18 @@ font-size: 30px;
   'content-xl-3 '
   'content-xl-4';  
 } 
+.wall h1{
+  font-size: 20px;
+}
+.icon-flexa1 {
+  width: 20px;
+}
+.icon-flexa2 {
+  width: 20px;
+}
+.content-frota-y {
+  top: 60px;
+}
 }
 @media only screen and (max-width:800px){
 .container{
@@ -1014,8 +1090,8 @@ font-size: 30px;
   'card-1 '
   'card-2'
   'card-3'
-  'slide'
   'sobre'
+  'frota'
   'content-serviços'
   'contato'
   'content-apr'
@@ -1145,8 +1221,11 @@ header p {
   right:0px;
   bottom:0px;
 }
-.wall{
-  height: 35vh;
+#slide{
+  width: 80%;
+}
+.wall-1{
+  background-size: 100%;
 }
 .content-d{
   height: 250;
@@ -1233,6 +1312,9 @@ header p {
 }
 @media only screen and (max-width:900px){ 
 .content-sobre{
+  flex-direction: column;
+}
+.content-frota{
   flex-direction: column;
 }
 .content-contato-1{

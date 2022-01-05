@@ -144,25 +144,25 @@ header p {
   grid-area: content-xl-1;
   background: #00301b;
   padding: 3%;
-  height: 35vh;
+  height: 40vh;
 }
 .content-xl-2{
   grid-area: content-xl-2;
   background: #004929;
   padding: 3%;
-  height: 35vh;
+  height: 40vh;
 }
 .content-xl-3{
   grid-area: content-xl-3;
   background: #00301b;
   padding: 3%;
-  height: 35vh;
+  height: 40vh;
 }
 .content-xl-4{
   grid-area: content-xl-4;
   background: #004929;
   padding: 3%;
-  height: 35vh;
+  height: 40vh;
 }
 #content-apresentacao img{
   width: 30%;
@@ -681,6 +681,7 @@ header p {
   padding: 5%;
   border: 1px solid #888;
   width: 80%;
+  border-radius: 40px;
 }
 .close2 {
   color: var(--cor-verde-a);
@@ -704,6 +705,10 @@ header p {
 .modal2 p{
   padding: 1% 8% 2% 8%;
 }
+.modal-img1{
+  width: 80%;
+  border-radius: 20px;
+}
 /*****************modal3********************/
 .modal3 {
   display: none; 
@@ -724,6 +729,7 @@ header p {
   padding: 5%;
   border: 1px solid #888;
   width: 80%;
+  border-radius: 40px;
 }
 .close3 {
   color: var(--cor-verde-a);
@@ -748,7 +754,12 @@ header p {
   display: flex;
 }
 .modal3 p{
-  padding: 1% 8% 8% 8%;
+  padding: 1% 8% 2% 8%;
+}
+.modal-img2{
+  width: 70%;
+  border-radius: 20px;
+  margin: 5%;
 }
 /*****************modal4********************/
 .modal4 {
@@ -770,6 +781,7 @@ header p {
   padding: 5%;
   border: 1px solid #888;
   width: 80%;
+  border-radius: 40px;
 }
 .close4 {
   color: var(--cor-verde-a);
@@ -792,6 +804,10 @@ header p {
 }
 .modal4 p{
   padding: 1% 8% 2% 8%;
+}
+.modal-img3{
+  width: 70%;
+  border-radius: 20px;
 }
 /****************Contato*************************/
 #contato{
@@ -1220,6 +1236,27 @@ font-size: 30px;
 .icon-flexa2 {
   width: 20px;
 }
+.modal-img1 {
+  width: 100%;
+}
+.modal2 p {
+  font-size: 14px;
+}
+.modal-img2{
+  width: 100%;
+}
+.content-serviços-y h2 {
+  font-size: 20px;
+}
+.modal3 p {
+  font-size: 14px;
+}
+.modal-img3 {
+  width: 100%;
+}
+.modal4 p {
+  font-size: 14px;
+}
 .content-frota-y {
   top: 60px;
 }
@@ -1474,7 +1511,7 @@ header p {
 .content-sobre{
   flex-direction: column;
 }
-.content-frota{
+.modal-text-0{
   flex-direction: column;
 }
 .content-contato-1{

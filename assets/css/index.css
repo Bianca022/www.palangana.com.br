@@ -223,7 +223,6 @@ header p {
 }
 .modal1-content {
   margin: auto;
-  padding: 20px;
   width: 80%;
 }
 .close1 {
@@ -231,7 +230,7 @@ header p {
   float: right;
   font-size: 40px;
   font-weight: bold;
-  margin: 2%;
+  margin: 1%;
 }
 .close1:hover,
 .close1:focus {
@@ -418,13 +417,14 @@ header p {
 }
 .wall-text{
   background: #0f6640b7;
+  border-radius: 0px 0px 20px 20px ;
   padding: 2%;
   vertical-align: middle;
 }
 .wall h1{
   color: var(--cor-branco) ;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   margin: 0%;
 }
@@ -459,28 +459,64 @@ header p {
 #wall-6 img{
   width: 3%;
 }
+#wall-7 img{
+  width: 3%;
+}
+#wall-8 img{
+  width: 3%;
+}
+#wall-9 img{
+  width: 3%;
+}
+#wall-10 img{
+  width: 3%;
+}
 .icon-flexa2{
   float: right;
-  margin: 5%;
   margin-top: 20%;
 }
+.icon-flexa2 img{
+  width: 50%;
+}
 .wall-1{
-  background: url(../img/lanchas.png) 0 0 / cover no-repeat;
+  background: url(../img/Kaskao\ 1.png) 0 0 / cover no-repeat;
+  background-size: 100%;
 }
 .wall-2{
-    background: url(../img/Foto\ carousel2.png) 0 0 / cover no-repeat;
+    background: url(../img/Palangan\ II.png) 0 0 / cover no-repeat;
+    background-size: 100%;
 }
 .wall-3{
-    background: url(../img/Foto\ carousel3.png) 0 0 / cover no-repeat;
+    background: url(../img/header.jpeg) 0 0 / cover no-repeat;
+    background-size: 100%;
 }
 .wall-4{
-    background: url(../img/Foto\ carousel4.png) 0 0 / cover no-repeat;
+    background: url(../img/header.jpeg) 0 0 / cover no-repeat;
+    background-size: 100%;
 }
 .wall-5{
-    background: url(../img/Foto\ carousel1.png) 0 0 / cover no-repeat;
+    background: url(../img/header.jpeg) 0 0 / cover no-repeat;
+    background-size: 100%;
 }
 .wall-6{
+  background: url(../img/header.jpeg) 0 0 / cover no-repeat;
+  background-size: 100%;
+}
+.wall-7{
+  background: url(../img/header.jpeg) 0 0 / cover no-repeat;
+  background-size: 100%;
+}
+.wall-8{
+  background: url(../img/header.jpeg) 0 0 / cover no-repeat;
+  background-size: 100%;
+}
+.wall-9{
+  background: url(../img/Palangana\ IX.png) 0 0 / cover no-repeat;
+  background-size: 100%;
+}
+.wall-10{
   background: url(../img/Palangana\ X.png) 0 0 / cover no-repeat;
+  background-size: 100%;
 }
 .wall:target{
   display: block;
@@ -489,7 +525,7 @@ header p {
 #content-serviços{
   grid-area: content-serviços;
   width: 100%;
-  background: linear-gradient(45deg, #024226e3, #5eb990dc) 0 0 / 1000% no-repeat,url(../img/posto.jpg) 0 0 / cover no-repeat;
+  background: linear-gradient(45deg, #024226e3, #5eb990dc) 0 0 / 1000% no-repeat,url(../img/Posto\ de\ combustível.jpg) 0 0 / cover no-repeat;
 }
 .content-serviços-x{
   margin: 3%;
@@ -1145,6 +1181,9 @@ footer{
 nav img{
   margin-left: 5%;
 }
+.modal1 {
+  margin-top: 80%;
+}
 .content-xl-1{
   height: 35vh;
 }
@@ -1224,17 +1263,14 @@ font-size: 30px;
   'content-xl-3 '
   'content-xl-4';  
 } 
+.wall {
+  width: 100%;
+}
 .wall h1{
   font-size: 17px;
 }
 .wall p{
   font-size: 13px;
-}
-.icon-flexa1 {
-  width: 20px;
-}
-.icon-flexa2 {
-  width: 20px;
 }
 .modal-img1 {
   width: 100%;
@@ -1366,6 +1402,12 @@ header p {
 #content-apresentacao img {
   width: 25%;
 }
+.icon-flexa1 {
+  width: 20px;
+}
+.icon-flexa2 {
+  width: 20px;
+}
 .card-1 {
   margin: 4%;
 }
@@ -1409,27 +1451,7 @@ header p {
 .wall-1{
   background-size: 100%;
 }
-#wall-1 img{
-  width: 5%;
-}
-#wall-2 img{
-  width: 5%;
-}
-#wall-3 img{
-  width: 5%;
-}
-#wall-4 img{
-  width: 5%;
-}
-#wall-5 img{
-  width: 5%;
-}
-#wall-6 img{
-  width: 5%;
-}
-.content-d{
-  height: 250;
-}
+
 #content-serviços{
   flex-direction: column;
 }
@@ -1521,5 +1543,38 @@ header p {
 form{
   padding: 0%;
   margin: 0%;
+}
+#wall-1 img{
+  width: 5%;
+}
+#wall-2 img{
+  width: 5%;
+}
+#wall-3 img{
+  width: 5%;
+}
+#wall-4 img{
+  width: 5%;
+}
+#wall-5 img{
+  width: 5%;
+}
+#wall-6 img{
+  width: 5%;
+}
+#wall-7 img{
+  width: 5%;
+}
+#wall-8 img{
+  width: 5%;
+}
+#wall-9 img{
+  width: 5%;
+}
+#wall-10 img{
+  width: 5%;
+}
+.content-d{
+  height: 250;
 }
 }

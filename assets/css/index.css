@@ -1097,7 +1097,7 @@ textarea#mensagem{
   margin: 20px;
   padding: 5%;
   border-radius: 20px;
-  background: linear-gradient(45deg, #023f259f, #008d503a) 0 0 / 1000% no-repeat,url(../img/lanchas.png) 0 0 / cover no-repeat;
+  background: linear-gradient(45deg, #023f259f, #008d503a) 0 0 / 1000% no-repeat,url(../img/paranagua.jpg) 0 0 / cover no-repeat;
   align-items: center;
   box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
   cursor: pointer;
@@ -1113,7 +1113,7 @@ textarea#mensagem{
   margin: 20px;
   padding: 5%;
   border-radius: 20px;
-  background: linear-gradient(45deg, #023f2596, #008d5057) 0 0 / 1000% no-repeat,url(../img/div_services.jpeg) 0 0 / cover no-repeat;
+  background: linear-gradient(45deg, #023f2596, #008d5057) 0 0 / 1000% no-repeat,url(../img/antonina.jpg) 0 0 / cover no-repeat;
   align-items: center;
   box-shadow: 5px 5px 30px 7px rgba(65, 65, 65, 0.25), -5px -5px 30px 7px rgba(19, 138, 39, 0.22);
   cursor: pointer;

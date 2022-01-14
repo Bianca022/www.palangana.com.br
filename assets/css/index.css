@@ -268,18 +268,19 @@ header p {
 }
 #myBtn1{
   color: var(--cor-branco);
-  padding: 8px 60px 8px 60px;
+  padding: 15px 80px 15px 80px;
   cursor: pointer;
   transition: 0.4s;
-  margin-top: 4%;
+  margin-top: 12%;
   border: solid 3px var(--cor-verde-a);
-  border-radius: 15px;
+  border-radius: 20px;
   background: transparent;
 }
 #myBtn1:hover {
   transform: scale(0.9, 0.9);
 }
 #myBtn1 h3{
+  font-size: 20px;
   font-weight: 400;
 }
 .myBtn2{

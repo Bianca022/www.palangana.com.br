@@ -235,59 +235,6 @@ header p {
   font-size: 17px;
   color: var(--cor-branco);
 }
-/*****************modal********************/
-.modal1 {
-  display: none;
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
-}
-.modal1-content {
-  margin: auto;
-  width: 80%;
-}
-.close1 {
-  color: #ffffff;
-  float: right;
-  font-size: 40px;
-  font-weight: bold;
-  margin: 1%;
-}
-.close1:hover,
-.close1:focus {
-  color: var(--cor-verde-b);
-  text-decoration: none;
-  cursor: pointer;
-}
-#myBtn1{
-  color: var(--cor-branco);
-  padding: 15px 80px 15px 80px;
-  cursor: pointer;
-  transition: 0.4s;
-  margin-top: 12%;
-  border: solid 3px var(--cor-verde-a);
-  border-radius: 20px;
-  background: transparent;
-}
-#myBtn1:hover {
-  transform: scale(0.9, 0.9);
-}
-#myBtn1 h3{
-  font-size: 20px;
-  font-weight: 400;
-}
-.myBtn2{
-  display: block;
-  margin-left: auto;
-  margin-right: auto
-}
 /**************Cultura**********************/
 #card-text{
   grid-area: card-text;
@@ -431,7 +378,7 @@ header p {
   right: 80px;
   bottom: 80px;
 }
-.content-sobre-y video{
+.content-sobre-y iframe{
   width: 100%;
   border: solid 5px var(--cor-branco);
   border-radius: 20px;
@@ -439,134 +386,148 @@ header p {
   cursor: pointer;
   transition: 0.4s;
 }
-.content-sobre-y video:hover {
+.content-sobre-y iframe:hover {
   transform: scale(0.9, 0.9);
   box-shadow: 5px 5px 30px 15px rgba(99, 99, 99, 0.25), -5px -5px 30px 15px rgba(138, 137, 137, 0.22);
 }
-/****************Slide********************/  
-#slide{
-  grid-area: slide;
-  width: 100%;
+/*****************modal********************/
+.modal1 {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 30px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.877);
   align-items: center;
+}
+.modal1-content {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.close1 {
+  color: var(--cor-branco);
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+.close1:hover,
+.close1:focus {
+  color: var(--cor-branco);
+  text-decoration: none;
+  cursor: pointer;
+}
+#myBtn1{
+  color: var(--cor-branco);
+  padding: 15px 80px 15px 80px;
   cursor: pointer;
   transition: 0.4s;
+  margin-top: 12%;
+  border: solid 3px var(--cor-verde-a);
+  border-radius: 20px;
+  background: transparent;
 }
-.wall{
-  display: none;
-  width: 100%;
-  height: 75vh;
+#myBtn1:hover {
+  transform: scale(0.9, 0.9);
 }
-.wall-text{
-  background: #0f6640b7;
-  border-radius: 0px 0px 20px 20px ;
-  padding: 2%;
-  vertical-align: middle;
+#myBtn1 h3{
+  font-size: 20px;
+  font-weight: 400;
 }
-.wall h1{
-  color: var(--cor-branco) ;
-  font-size: 25px;
-  font-weight: 500;
-  text-align: center;
-  margin: 0%;
-}
-.wall p{
-  color: var(--cor-branco);
-  font-size: 18px;
-}
-.icon-flexa1{
-  float: left;
-  margin: 5%;
-  margin-top: 20%;
-}
-.icon-flexa1 img{
-  width: 50%;
-}
-#wall-1 img{
-  width: 3%;
-  display: table;
-}
-#wall-2 img{
-  width: 3%;
-}
-#wall-3 img{
-  width: 3%;
-}
-#wall-4 img{
-  width: 3%;
-}
-#wall-5 img{
-  width: 3%;
-}
-#wall-6 img{
-  width: 3%;
-}
-#wall-7 img{
-  width: 3%;
-}
-#wall-8 img{
-  width: 3%;
-}
-#wall-9 img{
-  width: 3%;
-}
-#wall-10 img{
-  width: 3%;
-}
-.icon-flexa2{
-  float: right;
-  margin-top: 20%;
-}
-.icon-flexa2 img{
-  width: 50%;
-}
-.wall-1{
-  background: url(../img/Kaskao\ 1.png) 0 0 / cover no-repeat;
-  background-size: 100%;
-}
-.wall-2{
-    background: url(../img/Palangan\ II.png) 0 0 / cover no-repeat;
-    background-size: 100%;
-}
-.wall-3{
-    background: url(../img/header.jpeg) 0 0 / cover no-repeat;
-    background-size: 100%;
-}
-.wall-4{
-    background: url(../img/header.jpeg) 0 0 / cover no-repeat;
-    background-size: 100%;
-}
-.wall-5{
-    background: url(../img/header.jpeg) 0 0 / cover no-repeat;
-    background-size: 100%;
-}
-.wall-6{
-  background: url(../img/header.jpeg) 0 0 / cover no-repeat;
-  background-size: 100%;
-}
-.wall-7{
-  background: url(../img/header.jpeg) 0 0 / cover no-repeat;
-  background-size: 100%;
-}
-.wall-8{
-  background: url(../img/header.jpeg) 0 0 / cover no-repeat;
-  background-size: 100%;
-}
-.wall-9{
-  background: url(../img/Palangana\ IX.png) 0 0 / cover no-repeat;
-  background-size: 100%;
-}
-.wall-10{
-  background: url(../img/Palangana\ X.png) 0 0 / cover no-repeat;
-  background-size: 100%;
-}
-.wall:target{
+.myBtn2{
   display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.tex-modal-1{
+  background: linear-gradient(180deg, rgba(11, 128, 70, 0), rgba(16, 90, 48, 0.829)) 0 0 / 1000% no-repeat,url(../img/Kaskao1.jpg) 0 0 / cover no-repeat;
+  background-size: 100%;
+  width: 90%;
+  bottom: 50px;
+  padding: 40% 0% 5% 0%;
+  text-align: center;
+  margin:3% ;
+  border-radius: 10px;
+}
+.tex-modal-1 h2{
+  color: var(--cor-branco);
+}
+.tex-modal-1 p{
+  color: var(--cor-branco);
+}
+.tex-modal-2{
+  background: linear-gradient(180deg, rgba(11, 128, 70, 0), rgba(16, 90, 48, 0.829)) 0 0 / 1000% no-repeat,url(../img/palanganaII.jpg) 0 0 / cover no-repeat;
+  background-size: 100%;
+  width: 90%;
+  bottom: 50px;
+  padding: 40% 0% 5% 0%;
+  text-align: center;
+  margin:3% ;
+  border-radius: 10px;
+}
+.tex-modal-2 h2{
+  color: var(--cor-branco);
+}
+.tex-modal-2 p{
+  color: var(--cor-branco);
+}
+.tex-modal-3{
+  background: linear-gradient(180deg, rgba(11, 128, 70, 0), rgba(16, 90, 48, 0.829)) 0 0 / 1000% no-repeat,url(../img/palanganaVI.jpg) 0 0 / cover no-repeat;
+  background-size: 100%;
+  width: 90%;
+  bottom: 50px;
+  padding: 40% 0% 5% 0%;
+  text-align: center;
+  margin:3% ;
+  border-radius: 10px;
+}
+.tex-modal-3 h2{
+  color: var(--cor-branco);
+}
+.tex-modal-3 p{
+  color: var(--cor-branco);
+}
+.tex-modal-4{
+  background: linear-gradient(180deg, rgba(11, 128, 70, 0), rgba(16, 90, 48, 0.829)) 0 0 / 1000% no-repeat,url(../img/palanganaIX.jpg) 0 0 / cover no-repeat;
+  background-size: 100%;
+  width: 90%;
+  bottom: 50px;
+  padding: 40% 0% 5% 0%;
+  text-align: center;
+  margin:3% ;
+  border-radius: 10px;
+}
+.tex-modal-4 h2{
+  color: var(--cor-branco);
+}
+.tex-modal-4 p{
+  color: var(--cor-branco);
+}
+.tex-modal-5{
+  background: linear-gradient(180deg, rgba(11, 128, 70, 0), rgba(16, 90, 48, 0.829)) 0 0 / 1000% no-repeat,url(../img/palanganaX.jpg) 0 0 / cover no-repeat;
+  background-size: 100%;
+  width: 90%;
+  bottom: 50px;
+  padding: 40% 0% 5% 0%;
+  text-align: center;
+  margin:3% ;
+  border-radius: 10px;
+}
+.tex-modal-5 h2{
+  color: var(--cor-branco);
+}
+.tex-modal-5 p{
+  color: var(--cor-branco);
 }
 /****************Serviços********************/
 #content-serviços{
   grid-area: content-serviços;
   width: 100%;
-  background: linear-gradient(45deg, #024226e3, #5eb990dc) 0 0 / 1000% no-repeat,url(../img/Posto\ de\ combustível.jpg) 0 0 / cover no-repeat;
+  background: linear-gradient(45deg, #024226e3, #5eb990dc) 0 0 / 1000% no-repeat,url(../img/posto_de_combustivel.jpg) 0 0 / cover no-repeat;
 }
 .content-serviços-x{
   margin: 3%;
@@ -581,11 +542,11 @@ header p {
   content: "";
   display: block;
   height: 2px;
-  width: 150px;
+  width: 120px;
   background-color: var(--cor-branco);
   margin: 0 auto;
-  margin-top: 13px;
-  margin-bottom: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .content-serviços-x p{
   color: var(--cor-branco);
@@ -619,7 +580,6 @@ header p {
 }
 .card-serviços-1:hover {
   transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(99, 99, 99, 0.25), -5px -5px 30px 15px rgba(138, 137, 137, 0.22);
 }
 .card-serviços-2{
   margin: 3%;
@@ -633,7 +593,6 @@ header p {
 }
 .card-serviços-2:hover {
   transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(99, 99, 99, 0.25), -5px -5px 30px 15px rgba(138, 137, 137, 0.22);
 }
 .card-serviços-3{
   margin: 3%;
@@ -647,7 +606,6 @@ header p {
 }
 .card-serviços-3:hover {
   transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(99, 99, 99, 0.25), -5px -5px 30px 15px rgba(138, 137, 137, 0.22);
 }
 .content-a1{
   content: "";
@@ -743,149 +701,251 @@ header p {
   display: none; 
   position: fixed; 
   z-index: 1; 
-  padding-top: 100px; 
+  padding-top: 70px; 
   left: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
   overflow: auto;
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
+  background-color: rgba(0, 0, 0, 0.815); 
 }
 .modal2-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 5%;
-  border: 1px solid #888;
   width: 80%;
-  border-radius: 40px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left:10% ;
+}
+/**/
+.tex-modal2{
+  background: linear-gradient(180deg, rgba(11, 128, 70, 0), rgba(16, 90, 48, 0.801)) 0 0 / 1000% no-repeat,url(../img/lanchas2.jpg) 0 0 / cover no-repeat;
+  background-size: 100%;
+  width: 70%;
+  padding: 30% 0% 5% 0%;
+  text-align: center;
+  border-radius: 10px;
+}
+.tex-modal2 h2{
+  color: var(--cor-branco);
+}
+.tex-modal2 p{
+  color: var(--cor-branco);
 }
 .close2 {
-  color: var(--cor-verde-a);
+  color: var(--cor-branco);
   float: right;
   font-size: 40px;
   font-weight: bold;
+  margin: 1% 20% 1% 2%;
 }
 .close2:hover,
 .close2:focus {
-  color: #000;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
 }
 #myBtn2{
-  color: var(--cor-verde-b);
-  padding: 2px 8px 2px 8px;
-  border: solid 2px var(--cor-verde-b);
+  color: var(--cor-verde-a);
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-top: 2%;
+  border: solid 1px var(--cor-verde-a);
   border-radius: 15px;
   background: transparent;
+}
+#myBtn2 h3{
+  font-weight: 400;
 }
 .modal2 p{
   padding: 1% 8% 2% 8%;
 }
 .modal-img1{
-  width: 80%;
-  border-radius: 20px;
+  width: 70%;
 }
 /*****************modal3********************/
 .modal3 {
   display: none; 
   position: fixed; 
   z-index: 1; 
-  padding-top: 100px; 
+  padding-top: 30px; 
   left: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
   overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
+  background-color: rgba(0, 0, 0, 0.877);
+  align-items: center;
 }
 .modal3-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 5%;
-  border: 1px solid #888;
-  width: 80%;
-  border-radius: 40px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-modal1{
+  width: 100%;
+}
+.text-modal2{
+  width: 100%;
+}
+/**/
+.tex-modal3{
+  background: linear-gradient(180deg, rgba(11, 128, 70, 0), rgba(16, 90, 48, 0.829)) 0 0 / 1000% no-repeat,url(../img/lanchas.jpg) 0 0 / cover no-repeat;
+  background-size: 100%;
+  width: 90%;
+  bottom: 50px;
+  padding: 40% 0% 5% 0%;
+  text-align: center;
+  margin:3% ;
+  border-radius: 10px;
+}
+.tex-modal3 h2{
+  color: var(--cor-branco);
+}
+.tex-modal3 p{
+  color: var(--cor-branco);
+}
+/**/
+.tex-modal4{
+  background: linear-gradient(180deg, rgba(11, 128, 70, 0),rgba(16, 90, 48, 0.829)) 0 0 / 1000% no-repeat,url(../img/Salvatagem.jpg) 0 0 / cover no-repeat;
+  background-size: 100%;
+  width: 90%;
+  padding: 40% 0% 5% 0%;
+  text-align: center;
+  margin: 3%;
+  border-radius: 10px;
+}
+.tex-modal4 h2{
+  color: var(--cor-branco);
+}
+.tex-modal4 p{
+  color: var(--cor-branco);
+}
+/**/
+.tex-modal5{
+  background: linear-gradient(180deg, rgba(11, 128, 70, 0), rgba(16, 90, 48, 0.829)) 0 0 / 1000% no-repeat,url(../img/palanganaII.jpg) 0 0 / cover no-repeat;
+  background-size: 100%;
+  width: 90%;
+  bottom: 50px;
+  padding: 40% 2% 5% 2%;
+  text-align: center;
+  margin: 3%;
+  border-radius: 10px;
+}
+.tex-modal5 h2{
+  color: var(--cor-branco);
+}
+.tex-modal5 p{
+  color: var(--cor-branco);
+}
+/**/
+.tex-modal6{
+  background: linear-gradient(180deg, rgba(11, 128, 70, 0), rgba(16, 90, 48, 0.829)) 0 0 / 1000% no-repeat,url(../img/posto.jpg) 0 0 / cover no-repeat;
+  background-size: 100%;
+  width: 90%;
+  padding: 40% 0% 5% 0%;
+  text-align: center;
+  margin: 3%;
+  border-radius: 10px;
+}
+.tex-modal6 h2{
+  color: var(--cor-branco);
+}
+.tex-modal6 p{
+  color: var(--cor-branco);
 }
 .close3 {
-  color: var(--cor-verde-a);
+  color: var(--cor-branco);
   float: right;
   font-size: 40px;
   font-weight: bold;
 }
 .close3:hover,
 .close3:focus {
-  color: #000;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
 }
 #myBtn3{
-  color: var(--cor-verde-b);
-  padding: 2px 8px 2px 8px;
-  border: solid 2px var(--cor-verde-b);
+  color: var(--cor-verde-a);
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-top: 2%;
+  border: solid 1px var(--cor-verde-a);
   border-radius: 15px;
   background: transparent;
 }
-.modal-text-0{
-  display: flex;
+#myBtn3 h3{
+  font-weight: 400;
 }
 .modal3 p{
   padding: 1% 8% 2% 8%;
 }
-.modal-img2{
-  width: 70%;
-  border-radius: 20px;
-  margin: 5%;
-}
+
 /*****************modal4********************/
 .modal4 {
   display: none;
   position: fixed; 
   z-index: 1;
-  padding-top: 100px; 
+  padding-top: 80px; 
   left: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
   overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.856); 
 }
 .modal4-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 5%;
-  border: 1px solid #888;
   width: 80%;
-  border-radius: 40px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left:15% ;
+}
+.tex-modal7{
+  background: linear-gradient(180deg, rgba(11, 128, 70, 0), rgba(16, 90, 48, 0.479)) 0 0 / 1000% no-repeat,url(../img/amarracao.jpg) 0 0 / cover no-repeat;
+  background-size: 100%;
+  width: 60%;
+  padding: 35% 0% 2% 0%;
+  text-align: center;
+  border-radius: 10px;
+}
+.tex-modal7 h2{
+  color: var(--cor-branco);
+}
+.tex-modal7 p{
+  color: var(--cor-branco);
+  padding: 1% 8% 2% 8%;
 }
 .close4 {
-  color: var(--cor-verde-a);
+  color: var(--cor-branco);
   float: right;
   font-size: 40px;
   font-weight: bold;
+  margin: 1% 25% 1% 2%;
 }
 .close4:hover,
 .close4:focus {
-  color: #000;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
 }
 #myBtn4{
-  color: var(--cor-verde-b);
-  padding: 2px 8px 2px 8px;
-  border: solid 2px var(--cor-verde-b);
+  color: var(--cor-verde-a);
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-top: 2%;
+  border: solid 1px var(--cor-verde-a);
   border-radius: 15px;
   background: transparent;
 }
-.modal4 p{
-  padding: 1% 8% 2% 8%;
+#myBtn4 h3{
+  font-weight: 400;
 }
-.modal-img3{
-  width: 70%;
-  border-radius: 20px;
-}
+
+
 /****************Contato*************************/
 #contato{
   grid-area: contato;
@@ -905,6 +965,7 @@ header p {
   color: var(--cor-verde-b);
   text-align: center;
   margin: 10px;
+  font-weight: 500;
 }
 .content-c{
   content: "";
@@ -915,6 +976,10 @@ header p {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.content-contato a{
+  text-decoration: none;
+  color: var(--cor-verde-b);
 }
 .content-contato p{
   text-align: center;
@@ -1143,8 +1208,9 @@ footer{
 }
 .footer-x1 img{
   width:70%;
-  margin-left: 20%;
-  margin-top: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 .footer-x2{
   width: 100%;
@@ -1222,9 +1288,6 @@ footer{
 nav img{
   margin-left: 5%;
 }
-.modal1 {
-  margin-top: 50%;
-}
 .content-xl-1{
   height: 35vh;
 }
@@ -1294,6 +1357,18 @@ font-size: 30px;
 .content-area-x2{
   height: 30vh;
 }
+.close1{
+  margin: -10% ;
+}
+.icon-flexa1 {
+  margin-top: -15%;
+}
+.icon-flexa2 {
+  margin-top: -15%;
+}
+.close3{
+  margin-right: -10%;
+}
 }
 @media only screen and (max-width:600px){
 #content-apresentacao{
@@ -1304,16 +1379,6 @@ font-size: 30px;
   'content-xl-3 '
   'content-xl-4';  
 } 
-.wall {
-  width: 100%;
-  height: 18vh;
-}
-.wall h1{
-  font-size: 17px;
-}
-.wall p{
-  font-size: 13px;
-}
 .modal-img1 {
   width: 100%;
 }
@@ -1488,12 +1553,8 @@ header p {
   bottom:0px;
 }
 #slide{
-  width: 80%;
+  width: 100%;
 }
-.wall-1{
-  background-size: 100%;
-}
-
 #content-serviços{
   flex-direction: column;
 }
@@ -1569,6 +1630,48 @@ header p {
   flex-direction: column;
   align-items: center;
   padding: 5%;
+}
+.tex-modal-1{
+  padding: 75% 10% 10% 10%;
+  margin: 6%;
+}
+.tex-modal-2{
+  padding: 75% 10% 10% 10%;
+  margin: 6%;
+}
+.tex-modal-3{
+  padding: 75% 10% 10% 10%;
+  margin: 6%;
+}
+.tex-modal-4{
+  padding: 75% 10% 10% 10%;
+  margin: 6%;
+}
+.tex-modal-5{
+  padding: 75% 10% 10% 10%;
+  margin: 6%;
+}
+.tex-modal2{
+  padding: 70% 2% 10% 2%;
+}
+.tex-modal3{
+  padding: 75% 10% 10% 10%;
+  margin: 6%;
+}
+.tex-modal4{
+  padding: 75% 10% 10% 10%;
+  margin: 6%;
+}
+.tex-modal5{
+  padding: 75% 10% 10% 10%;
+  margin: 6%;
+}
+.tex-modal6{
+  padding: 75% 10% 10% 10%;
+  margin: 6%;
+}
+.tex-modal7{
+  padding: 60% 10% 10% 10%;
 }
 }
 @media only screen and (max-width:900px){ 
